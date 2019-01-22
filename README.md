@@ -61,3 +61,8 @@ These will be supplied to you with a handout and are unique to each registered p
 - Chapter 5 - [Segment the Data](/chapters/chapter-5.md)
 - Chapter 6 - [Stream in Data](/chapters/chapter-6.md)
 - Chapter 7 - [Integration and Connector Examples](/chapters/chapter-7.md)
+
+
+#### Administrative (remove before Summit)
+
+[Checklist for changes to 2018 Workbook by 1/30](/new-layout.md)
