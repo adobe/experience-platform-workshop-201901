@@ -1,0 +1,276 @@
+{
+    "title": "{{ldap}}_Profile",
+    "type": "object",
+    "description": "XDM Profiles are a singular representation of the attributes of identified and\npartially identified persons. Profiles that are highly identified maybe used for\npersonal communications or highly targeted engagements and can contain detailed\npersonal information such as names, gender, date of birth, locations, and contact\ninformation like phone numbers and email addresses. Profiles may range to the\nother end of the identification spectrum where only anonymous behavioral signals\nare being observed and the amount of identification is simple browser cookies.\nIn this latter case, the sparse Profile data is useful to build more knowledge\non the interests and preferences of the anonymous profile, and over time can\nbecome richer as the person interacting with brand becomes more engaged and\nultimately signs-on to notifications, subscriptions, purchases and other\nconnections with the brand that enrich and fill out the profile.\n\nXDM Profile can contain personal information, identification information, contact\ndetails and communication preferences. Over time XDM Profile will expand to cater\nfor other Profile data such as preference, propensities and other attributes.\n\n",
+    "properties": {
+        "repositoryCreatedBy": {
+            "title": "Created by User Identifier",
+            "type": "string",
+            "description": "User id who has created the entity.\n",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:repositoryCreatedBy"
+        },
+        "repositoryLastModifiedBy": {
+            "title": "Modified by User Identifier",
+            "type": "string",
+            "description": "User id who last modified the entity.\nAt creation time, `modifiedByUser` is set as `createdByUser`.\n",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:repositoryLastModifiedBy"
+        },
+        "createdByBatchID": {
+            "title": "Created by Batch Identifier",
+            "type": "string",
+            "format": "uri",
+            "description": "The Data Set Files in Catalog Services which has been originating the creation of the entity.\n",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:createdByBatchID"
+        },
+        "modifiedByBatchID": {
+            "title": "Modified by Batch Identifier",
+            "type": "string",
+            "format": "uri",
+            "description": "The last Data Set Files in Catalog Services which has modified the entity.\nAt creation time, `modifiedByBatchID` is set as `createdByBatchID`.\n",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:modifiedByBatchID"
+        },
+        "_repo": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "createDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "meta:immutable": true,
+                    "meta:usereditable": false,
+                    "examples": [
+                        "2004-10-23T12:00:00-06:00"
+                    ],
+                    "description": "The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The Date Time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
+                    "meta:xdmType": "date-time",
+                    "meta:xdmField": "repo:createDate"
+                },
+                "lastModifiedDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "meta:usereditable": false,
+                    "examples": [
+                        "2004-10-23T12:00:00-06:00"
+                    ],
+                    "description": "The server date and time when the resource was most recently modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The Date Time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
+                    "meta:xdmType": "date-time",
+                    "meta:xdmField": "repo:lastModifiedDate"
+                }
+            }
+        },
+        "identities": {
+            "title": "All User Identities",
+            "type": "array",
+            "minItems": 1,
+            "description": "Array of Identities. Condensed, normalized encapsulation of all end user identifiers.",
+            "meta:xdmType": "array",
+            "items": {
+                "$ref": "context/identity"
+            },
+            "meta:xdmField": "xdm:identities"
+        },
+        "person": {
+            "title": "Person",
+            "$ref": "context/person",
+            "description": "An individual actor, contact, or owner.\n",
+            "meta:xdmField": "xdm:person"
+        },
+        "homeAddress": {
+            "title": "Home Address",
+            "$ref": "common/address",
+            "description": "A home postal address.\n",
+            "meta:xdmField": "xdm:homeAddress"
+        },
+        "workAddress": {
+            "title": "Work Address",
+            "$ref": "common/address",
+            "description": "A work postal address.\n",
+            "meta:xdmField": "xdm:workAddress"
+        },
+        "personalEmail": {
+            "title": "Personal Email",
+            "$ref": "context/emailaddress",
+            "description": "A personal email address.\n",
+            "meta:xdmField": "xdm:personalEmail"
+        },
+        "workEmail": {
+            "title": "Work Email",
+            "$ref": "context/emailaddress",
+            "description": "A work email address.\n",
+            "meta:xdmField": "xdm:workEmail"
+        },
+        "homePhone": {
+            "title": "Home Phone",
+            "$ref": "context/phonenumber",
+            "description": "Home phone number.\n",
+            "meta:xdmField": "xdm:homePhone"
+        },
+        "workPhone": {
+            "title": "Work Phone",
+            "$ref": "context/phonenumber",
+            "description": "Work phone number.\n",
+            "meta:xdmField": "xdm:workPhone"
+        },
+        "mobilePhone": {
+            "title": "Mobile Phone",
+            "$ref": "context/phonenumber",
+            "description": "Mobile phone number.\n",
+            "meta:xdmField": "xdm:mobilePhone"
+        },
+        "faxPhone": {
+            "title": "Fax Phone",
+            "$ref": "context/phonenumber",
+            "description": "Fax phone number.\n",
+            "meta:xdmField": "xdm:faxPhone"
+        },
+        "optInOut": {
+            "title": "OptInOut",
+            "$ref": "context/optinout",
+            "description": "Describes a users opting in and out preferences for communication by medium\nand communication type.\n",
+            "meta:xdmField": "xdm:optInOut"
+        },
+        "pushNotificationTokens": {
+            "title": "Push Notification Tokens",
+            "type": "array",
+            "description": "Push notification tokens are used to communicate with applications that\nare installed on devices or SaaS application accounts.\n",
+            "meta:xdmType": "array",
+            "items": {
+                "$ref": "context/pushnotificationtoken"
+            },
+            "meta:xdmField": "xdm:pushNotificationTokens"
+        },
+        "orgUnit": {
+            "title": "Organizational Unit",
+            "$ref": "common/orgunit",
+            "description": "The unit within the organization owning the profile. This can be used to reference the organization details maintained in another dataset.",
+            "meta:xdmField": "xdm:orgUnit"
+        },
+        "geoUnit": {
+            "title": "Geographical Unit",
+            "$ref": "common/geounit",
+            "description": "The geographical unit within the organization owning the profile. This can be used to reference the geographical information maintained in another dataset.",
+            "meta:xdmField": "xdm:geoUnit"
+        },
+        "preferredLanguage": {
+            "title": "Preferred Language",
+            "type": "string",
+            "pattern": "^(((([A-Za-z]{2,3}(-([A-Za-z]{3}(-[A-Za-z]{3}){0,2}))?)|[A-Za-z]{4}|[A-Za-z]{5,8})(-([A-Za-z]{4}))?(-([A-Za-z]{2}|[0-9]{3}))?(-([A-Za-z0-9]{5,8}|[0-9][A-Za-z0-9]{3}))*(-([0-9A-WY-Za-wy-z](-[A-Za-z0-9]{2,8})+))*(-(x(-[A-Za-z0-9]{1,8})+))?)|(x(-[A-Za-z0-9]{1,8})+)|((en-GB-oed|i-ami|i-bnn|i-default|i-enochian|i-hak|i-klingon|i-lux|i-mingo|i-navajo|i-pwn|i-tao|i-tay|i-tsu|sgn-BE-FR|sgn-BE-NL|sgn-CH-DE)|(art-lojban|cel-gaulish|no-bok|no-nyn|zh-guoyu|zh-hakka|zh-min|zh-min-nan|zh-xiang)))$",
+            "examples": [
+                "en-GB",
+                "de-DE",
+                "yue-HK"
+            ],
+            "description": "Describes the preferred system of communication used by the profile. Language codes are expressed in BCP 47 format.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:preferredLanguage"
+        },
+        "timeZone": {
+            "title": "Time Zone",
+            "type": "string",
+            "examples": [
+                "America/Barbados",
+                "Antarctica/Davis",
+                "Asia/Calcutta"
+            ],
+            "description": "Describes which time zone the profile is present in, most frequently/the time zone preferred by the profile. Time zones are expressed according to the IETF tz database: https://www.ietf.org/timezones/tzdb-2016i/tz-link.htm",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:timeZone"
+        },
+        "profilePictureLink": {
+            "title": "Profile Picture Link",
+            "type": "string",
+            "description": "Link to profile's picture",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:profilePictureLink"
+        },
+        "emailFormat": {
+            "title": "Email Format",
+            "type": "string",
+            "description": "Email format preferred by the profile. This can be rich text/plain text",
+            "meta:enum": {
+                "html": "Rich text",
+                "plaintext": "Plain text"
+            },
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:emailFormat"
+        },
+        "organizations": {
+            "title": "Organizations",
+            "type": "array",
+            "meta:xdmType": "array",
+            "items": {
+                "type": "string",
+                "meta:xdmType": "string"
+            },
+            "meta:xdmField": "xdm:organizations"
+        },
+        "subscriptions": {
+            "title": "Subscriptions",
+            "type": "array",
+            "description": "Subscriptions that this profile is entitled to including terminated, expired or exhausted subscriptions.",
+            "meta:xdmType": "array",
+            "items": {
+                "$ref": "context/subscription"
+            },
+            "meta:xdmField": "xdm:subscriptions"
+        },
+        "testProfile": {
+            "title": "Test Profile",
+            "type": "boolean",
+            "description": "Indicates the `profile` record is for use in testing/verification purposes and should not be automatically included in normal operation(s).",
+            "default": false,
+            "meta:xdmType": "boolean",
+            "meta:xdmField": "xdm:testProfile"
+        },
+        "segments": {
+            "title": "Segment Membership",
+            "type": "array",
+            "meta:xdmType": "array",
+            "items": {
+                "$ref": "context/segmentmembership"
+            },
+            "meta:xdmField": "xdm:segments"
+        },
+        "syncedRemarketingAudiences": {
+            "title": "Synchronized segments",
+            "type": "array",
+            "description": "List of Search retargeting entities that have been synced with the adCloud partner to build audiences on the platform, e.g. RLSA for Google, WCA for Facebook",
+            "meta:xdmType": "array",
+            "items": {
+                "$ref": "adobe/experience/adcloud/syncedremarketingaudience"
+            },
+            "meta:xdmField": "xdm:syncedRemarketingAudiences"
+        },
+        "journeyAI": {
+            "title": "Journey AI Scores",
+            "type": "object",
+            "description": "Journey AI scores for all channels",
+            "meta:xdmType": "object",
+            "properties": {
+                "emailScore": {
+                    "title": "Journey AI scores for Email Channel",
+                    "$ref": "adobe/experience/campaign/journeyaiscores",
+                    "description": "Journey AI open, click and fatigue scores for email channel",
+                    "meta:xdmField": "xdm:emailScore"
+                }
+            },
+            "meta:xdmField": "xdm:journeyAI"
+        }
+    },
+    "created": 1539021644742,
+    "updated": 1539021644742,
+    "id": "context/profile",
+    "xdmVersion": "0.9.9.6",
+    "meta:extends": [
+        "external/repo/commmon"
+    ],
+    "meta:altId": "_xdm.context.profile",
+    "meta:xdmType": "object",
+    "meta:status": "experimental",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "context/profile"
+}
