@@ -1,8 +1,7 @@
-# 5. Segment the Data
+# Chapter 5. UI: Segment the Data
 
 ## Learning Objectives
 
-- Learn what the Unified Profile Service is and how to use it
 - Learn how to segment an audience of Profiles
 
 ## Lab Resources
@@ -11,8 +10,6 @@
 
 ## Lab Tasks
 
-- Define a segment via API in JSON
-- Create a segment job and export it to a new dataset
 - Define a segment using the Segment Builder within Platform UI
 
 ---
@@ -25,57 +22,9 @@ This will help with several aspects of our customer loyalty program, including t
 
 ---
 
-## Steps
-
-### Segmentation via the API
-
-1.  Now that we've ingested some data in [Chapter 4](/chapters/chapter-4.md) into our Unified Profile service, we're ready to begin segmenting the data in order to gain insights.
-1.  Start by expanding the `Chapter 5` & `Segmentation` folder in postman under `Adobe Experience Platform`.
-1.  Select the `Profile: Create A Segment Definition` action. Note that in the body section of the action we are creating a simple segment that will include all males who have interacted with the system in the past 90 days.
-
-    ![](/images/chapter-5/create_segment.png)
-
-1.  Then click `Send` to create the segment and view the results in the response section of postman.
-
-    ![](/images/chapter-5/create_segment_result.png)
-
-1.  Now that we've been able to define a segment the next step is to start a job to run the segment query for us. So select `POST Segment Job` and hit `Send`.
-
-    ![](/images/chapter-5/create_segment_job.png)
-
-1.  A segment job may take a little while to run so let's check on it's status by selecting `GET Segment Job status` and hitting `Send`.
-
-    ![](/images/chapter-5/create_segment_job_status.png)
-
-    If the `status` property says `PROCESSING` wait a little longer and `Send` the query again until you see `SUCCEEDED`.
-
-1.  Let's create a new dataset to hold the results of our segment job.
-
-    ![](/images/chapter-5/create_segment_dataset.png)
-
-1.  Now that the job has succeeded and we have a dataset to hold our segmentation data it's time to export the data. Select `POST Export Job` and hit `Send`.
-
-    ![](/images/chapter-5/create_segment_export.png)
-
-1.  We are getting close to being able to view our segment data. Select the `Get Export Job By Id` action and hit `Send`.
-
-    ![](/images/chapter-5/create_segment_export_success.png)
-
-    If the `status` property says `PROCESSING` wait a little longer and `Send` the query again until you see `SUCCEEDED`.
-
-1.  Now the easiest way to view your segmented dataset is to log in to [https://platform.adobe.com](https://platform.adobe.com), click on the Data tab, then click on {{ldap}}\_ProfileSegmentDataset and finally the `Preview` button.
-
-    ![](/images/chapter-5/create_segment_final.png)
-
-    As you can see all of the people in the dataset are `male`.
-
----
-
 ### Segementation via the Segment Builder UI
 
-Now that we've created a segment using JSON through the API, let's show how we can visually build one - helpful for those who may not want to write JSON, or simply want a web interface to do everything.
-
-*NOTE: Unfortunately, current limitations on provisioning prohibits us from letting everyone access this feature. As such, we will do a live demo of the following steps, so follow along for your reference.*
+Let's show how we can visually build a segment - a great tool to look at your Profiles and empower your marketing and analytics.
 
 1.  Head back to the main [Platform UI landing page](https://platform.adobe.com) and click on "Unified Profile", and then click the "Segmentation" tab. Here you'll see the "All Males" segement that we defined in the API already here.
 
@@ -110,5 +59,5 @@ Great work! Now we've run through the basics of setting up your customer loyalty
 
 ### Navigate
 
-**Previous:** Chapter 4 - [Ingest the Schema](/chapters/chapter-4.md)
-**Next:** Chapter 6 - [Integration and Connector Examples](/chapters/chapter-6.md)
+**Previous:** Chapter 4 - [UI: Ingest the Data](/chapters/chapter-4.md)
+**Next:** (API AND TECHNICAL LAB) Precursor - [Login and Accessing with Postman](/chapters/chapter-6.md)

@@ -1,4 +1,4 @@
-# 3. Define the Schema
+# Chapter 3. UI: Define the Schema
 
 ## Learning Objectives
 
@@ -53,37 +53,9 @@ Building a customer loyalty program requires a foundation. Here, we will define 
 	![](/images/chapter-3/ui-6-defineschema.png)
 
 
-### API: Schema Querying and Creation
-
-1. Now that you've successfuly been authenticated by following the steps in [Chapter 2](/chapters/chapter-2.md) you are now ready to make API calls.
-1. Start by expanding the `Chapter 3` & `List Schemas` folder in postman under `Adobe Experience Platform`.
-1. Select the `XDM: Get All Schemas` action and click `Send`.
-
-   ![](/images/chapter-3/get_all_schemas.png)
-
-   In the response pane you can scroll down and see all the schemas that are available in XDM.
-
-1. There sure are a lot of schemas available in XDM but let's drill down a bit and view the `profile` schema. If you select `XDM: Get Profile Schema` and click `Send` you should see something similar to:
-
-   ![](/images/chapter-3/get_profile_schema.png)
-
-1. Now that we've seen the API calls to query schema let's move on to creating a custom schema of our own. Expand the `Create Schema` folder under `Chapter 3` in postman and select `XDM: Create New Schema` and click `Send`.
-
-   ![](/images/chapter-3/create_schema.png)
-
-   In the response section you will the path to your newly created schema which we will be using to create a dataset in `Chapter 4`.
-
-1. Now select `XDM: Get Custom Profile Schema` and click `Send`.
-
-   ![](/images/chapter-3/get_custom_profile_schema.png)
-
-   The response section should return the details of the schema which look an awful lot like `Profile` schema. We've included a sample [ProfileXDM.json](/data/profileXDM.json) file in the repository if you'd like to compare them side by side.
-
-With the creation of our custom schema we are ready to move on to the next step of creating datasets and data ingestion.
-
 ---
 
 ### Navigate
 
-**Previous:** Chapter 2 - [Login and Accessing with Postman](/chapters/chapter-2.md)
-**Next:** Chapter 4 - [Ingest the Data](/chapters/chapter-4.md)
+**Previous:** Chapter 2 - [Setup: XDM and Experience Platform Overview](/chapters/chapter-2.md)
+**Next:** Chapter 4 - [UI: Ingest the Data](/chapters/chapter-4.md)
