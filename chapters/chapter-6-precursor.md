@@ -170,7 +170,7 @@ Using Adobe AdminConsole to manage an Experience Platform instance, manage Produ
 
    ![](/images/chapter-2/postman_import.png)
 
-   Select the [ExperiencePlatform.postman_collection.json](/postman/ExperiencePlatform.postman_collection.json) collection file from this repository.
+   Select the [ExperiencePlatform.postman_collection.json](postman/ExperiencePlatform.postman_collection.json) collection file from this repository.
 
 1. Next we need to import our environment. Click on the settings logo
 
@@ -184,7 +184,7 @@ Using Adobe AdminConsole to manage an Experience Platform instance, manage Produ
 
    ![](/images/chapter-2/postman_import_env.png)
 
-1. Select the [ExperiencePlatform.postman_environment.json](/postman/ExperiencePlatform.postman_environment.json) file to import the environment.
+1. Select the [ExperiencePlatform.postman_environment.json](postman/ExperiencePlatform.postman_environment.json) file to import the environment.
 
    ![](/images/chapter-2/postman_after_env_import.png)
 
@@ -249,5 +249,5 @@ Whew! We are finally ready to start calling the Adobe Experience Platform API's 
 
 ### Navigate
 
-**Previous:** Chapter 5 - [UI: Segment the Data](/chapters/chapter-1.md)
-**Next:** Chapter 6 - [API: Define the Schema](/chapters/chapter-3.md)
+**Previous:** Chapter 5 - [UI: Segment the Data](chapter-1.md)
+**Next:** Chapter 6 - [API: Define the Schema](chapter-3.md)

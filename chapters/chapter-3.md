@@ -9,7 +9,7 @@
 ## Lab Resources
 
 - Experience Platform UI: [https://platform.adobe.com/](https://platform.adobe.com/)
-- Profile XDM in JSON format: [ProfileXDM.json](/data/profileXDM.json)
+- Profile XDM in JSON format: [ProfileXDM.json](data/profileXDM.json)
 
 ## Lab Tasks
 
@@ -57,5 +57,5 @@ Building a customer loyalty program requires a foundation. Here, we will define 
 
 ### Navigate
 
-**Previous:** Chapter 2 - [Setup: XDM and Experience Platform Overview](/chapters/chapter-2.md)
-**Next:** Chapter 4 - [UI: Ingest the Data](/chapters/chapter-4.md)
+**Previous:** Chapter 2 - [Setup: XDM and Experience Platform Overview](chapter-2.md)
+**Next:** Chapter 4 - [UI: Ingest the Data](chapter-4.md)

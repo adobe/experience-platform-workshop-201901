@@ -9,7 +9,7 @@
 ## Lab Resources
 
 - Experience Platform UI: [https://platform.adobe.com/](https://platform.adobe.com/)
-- Sample data .parquet file in Profile XDM format: [ProfileDataSample.parquet](/data/ProfileDataSample.parquet)
+- Sample data .parquet file in Profile XDM format: [ProfileDataSample.parquet](data/ProfileDataSample.parquet)
 
 ## Lab Tasks
 
@@ -37,7 +37,7 @@ Once customer profile data exists within the platform, integrations with the com
 
 ### Data Querying & Ingestion
 
-1.  Building on the tasks we completed in [chapter 3](/chapters/chapter-3.md) we'll create a dataset using our custom schema type and ingest some data.
+1.  Building on the tasks we completed in [chapter 3](chapters/chapter-3.md) we'll create a dataset using our custom schema type and ingest some data.
 1.  Start by expanding the `Chapter 4` & `List Datasets` folder in postman under `Adobe Experience Platform`.
 1.  Skip over `Catalog: Get Datasets` and instead select the `Catalog: Get Datasets Limit 5` action and click `Send`.
 
@@ -93,7 +93,7 @@ Once customer profile data exists within the platform, integrations with the com
 
     ![](/images/chapter-4/upload_file_body.png)
 
-1.  From there you'll need to select a file to upload by clicking on `Choose Files` and selecting [ProfileDataSample.parquet](/data/ProfileDataSample.parquet).
+1.  From there you'll need to select a file to upload by clicking on `Choose Files` and selecting [ProfileDataSample.parquet](data/ProfileDataSample.parquet).
 
     ![](/images/chapter-4/upload_file_selected.png)
 
@@ -151,5 +151,5 @@ Well that was a lot of work to ingest the data. Let's move on to the next step w
 
 ### Navigate
 
-**Previous:** Chapter 6 - [API: Define the Schema](/chapters/chapter-6.md)
-**Next:** Chapter 8 - [Technical: Query the Data](/chapters/chapter-8.md)
+**Previous:** Chapter 6 - [API: Define the Schema](chapter-6.md)
+**Next:** Chapter 8 - [Technical: Query the Data](chapter-8.md)

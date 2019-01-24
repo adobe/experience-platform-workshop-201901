@@ -9,7 +9,7 @@
 ## Lab Resources
 
 - Experience Platform UI: [https://platform.adobe.com/](https://platform.adobe.com/)
-- Sample data .parquet file in Profile XDM format: [ProfileDataSample.parquet](/data/ProfileDataSample.parquet)
+- Sample data .parquet file in Profile XDM format: [ProfileDataSample.parquet](data/ProfileDataSample.parquet)
 
 ## Lab Tasks
 
@@ -75,5 +75,5 @@ For batch ingestion of data, it is important that the data is properly formatted
 
 ### Navigate
 
-**Previous:** Chapter 3 - [UI: Define the Schema](/chapters/chapter-3.md)
-**Next:** Chapter 5 - [UI: Segment the Data](/chapters/chapter-5.md)
+**Previous:** Chapter 3 - [UI: Define the Schema](chapter-3.md)
+**Next:** Chapter 5 - [UI: Segment the Data](chapter-5.md)

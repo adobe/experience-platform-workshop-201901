@@ -15,16 +15,16 @@ The scope of this workshop covers a portion of this story, that of establishing 
 The following are the personas designed specifically for Adobe Experience Cloud and Experience Platform. We will occasionally tie back the story of Experience Platform to these personas as we progress through the workshop.
 
 Joe
-![](/images/chapter-1/persona-joe.png)
+![](../images/chapter-1/persona-joe.png)
 
 Adam
-![](/images/chapter-1/persona-adam.png)
+![](../images/chapter-1/persona-adam.png)
 
 Archie
-![](/images/chapter-1/persona-archie.png)
+![](../images/chapter-1/persona-archie.png)
 
 Teresa
-![](/images/chapter-1/persona-teresa.png)
+![](../images/chapter-1/persona-teresa.png)
 
 ---
 
@@ -32,7 +32,7 @@ Teresa
 
 When we think about Adobe Experience Platform, we recognized the need to provide a layer of services that aid in delivering capabilities that enhance experiences. Service capabilities span across the platform from data pipeline all the way to action. We’ve integrated our previous core service layer into platform services, creating a simplified set of services that align to their respective area in the platform.
 
-![](/images/chapter-1/architecture-1.png)
+![](../images/chapter-1/architecture-1.png)
 
 ---
 
@@ -40,9 +40,9 @@ When we think about Adobe Experience Platform, we recognized the need to provide
 
 Our customer loyalty program will be built upon the Unified Profile Service. With this service, data that you ingest into the Experience Platform from multiple channels - CRM services, batch ingestion, streaming Adobe Analytics data, etc. - all combine and associate to individual Unified Profiles for your customers. You can then track and understand not only their Profile data, but attribute their behvavioral data to drive more intelligent insights on their propensities, behaviors, and more. These profiles can be exported through the API, or used within Adobe's Experience Cloud products like Adobe Campaign.
 
-![](/images/chapter-1/unifiedprofile-1.png)
+![](../images/chapter-1/unifiedprofile-1.png)
 
-![](/images/chapter-1/unifiedprofile-2.png)
+![](../images/chapter-1/unifiedprofile-2.png)
 
 ---
 
@@ -50,7 +50,7 @@ Our customer loyalty program will be built upon the Unified Profile Service. Wit
 
 Adobe Campaign is one use-case for Adobe Experience Cloud products living on Experience Platform. Based on a robust, hydrated Unified Profile for your customers, you can segment your customers based on Profile or behavioral attributes - birthday campaigns, re-activation for lost customers, points-based transactional emails, and more. Campaign Experience Platform integrates Experience Platform's Segmentation UI directly to deliver audiences straight from Unified Profile.
 
-![](/images/chapter-1/adobecampaign-1.png)
+![](../images/chapter-1/adobecampaign-1.png)
 
 ---
 
@@ -63,5 +63,5 @@ Slack channel (for Adobe Internal): #acp-workshop-planning
 
 ### Navigate
 
-**Previous:** Chapter 1 - [Setup: Before you start: Pre-Authorization](/chapters/chapter-1.md)
-**Next:** Chapter 3 - [UI: Define the Schema](/chapters/chapter-3.md)
+**Previous:** Chapter 1 - [Setup: Before you start: Pre-Authorization](chapter-1.md)
+**Next:** Chapter 3 - [UI: Define the Schema](chapter-3.md)

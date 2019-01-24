@@ -9,7 +9,7 @@
 ## Lab Resources
 
 - Experience Platform UI: [https://platform.adobe.com/](https://platform.adobe.com/)
-- Profile XDM in JSON format: [ProfileXDM.json](/data/profileXDM.json)
+- Profile XDM in JSON format: [ProfileXDM.json](data/profileXDM.json)
 
 ## Lab Tasks
 
@@ -28,7 +28,7 @@ Building a customer loyalty program requires a foundation. Here, we will define 
 
 ### API: Schema Querying and Creation
 
-1. Now that you've successfuly been authenticated by following the steps in [Chapter 2](/chapters/chapter-2.md) you are now ready to make API calls.
+1. Now that you've successfuly been authenticated by following the steps in [Chapter 2](chapters/chapter-2.md) you are now ready to make API calls.
 1. Start by expanding the `Chapter 3` & `List Schemas` folder in postman under `Adobe Experience Platform`.
 1. Select the `XDM: Get All Schemas` action and click `Send`.
 
@@ -50,7 +50,7 @@ Building a customer loyalty program requires a foundation. Here, we will define 
 
    ![](/images/chapter-3/get_custom_profile_schema.png)
 
-   The response section should return the details of the schema which look an awful lot like `Profile` schema. We've included a sample [ProfileXDM.json](/data/profileXDM.json) file in the repository if you'd like to compare them side by side.
+   The response section should return the details of the schema which look an awful lot like `Profile` schema. We've included a sample [ProfileXDM.json](data/profileXDM.json) file in the repository if you'd like to compare them side by side.
 
 With the creation of our custom schema we are ready to move on to the next step of creating datasets and data ingestion.
 
@@ -58,5 +58,5 @@ With the creation of our custom schema we are ready to move on to the next step 
 
 ### Navigate
 
-**Previous:** Precursor - [API: Login and Accessing with Postman](/chapters/chapter-6-precursor.md)
-**Next:** Chapter 7 - [API: Ingest the Data](/chapters/chapter-7.md)
+**Previous:** Precursor - [API: Login and Accessing with Postman](chapter-6-precursor.md)
+**Next:** Chapter 7 - [API: Ingest the Data](chapter-7.md)

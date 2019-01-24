@@ -31,5 +31,5 @@
 
 ### Navigate
 
-**Previous:** Chapter 7 - [API: Ingest the Data](/chapters/chapter-7.md)
-**Next:** Chapter 9 - [Technical: Stream in Data](/chapters/chapter-9.md)
+**Previous:** Chapter 7 - [API: Ingest the Data](chapter-7.md)
+**Next:** Chapter 9 - [Technical: Stream in Data](chapter-9.md)

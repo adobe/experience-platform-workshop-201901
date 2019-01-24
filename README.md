@@ -45,34 +45,34 @@ These will be supplied to you with a handout and are unique to each registered p
 
 #### Resources to download
 
-- [Experience Platform API Postman Collection](/postman/ExperiencePlatform.postman_collection.json)
-- [Experience Platform API Postman Environment](/postman/ExperiencePlatform.postman_environment.json)
+- [Experience Platform API Postman Collection](postman/ExperiencePlatform.postman_collection.json)
+- [Experience Platform API Postman Environment](postman/ExperiencePlatform.postman_environment.json)
 - Sample Profile XDM Data
-  - [ProfileData.parquet](/data/ProfileDataSample.parquet)
+  - [ProfileData.parquet](data/ProfileDataSample.parquet)
 - [Link to Adobe Experience Platform sign-in page](https://platform.adobe.com)
 
 #### Chapters
 
 ##### Setup
 
-- Chapter 1 - [Before you start: Pre-Authorization](/chapters/chapter-1.md)
-- Chapter 2 - [XDM and Experience Platform Overview](/chapters/chapter-2.md)
+- Chapter 1 - [Before you start: Pre-Authorization](chapters/chapter-1.md)
+- Chapter 2 - [XDM and Experience Platform Overview](chapters/chapter-2.md)
 
 ##### UI-Based Lab
 
-- Chapter 3 - [Define the Schema](/chapters/chapter-3.md)
-- Chapter 4 - [Ingest the Data](/chapters/chapter-4.md)
-- Chapter 5 - [Segment the Data](/chapters/chapter-5.md)
+- Chapter 3 - [Define the Schema](chapters/chapter-3.md)
+- Chapter 4 - [Ingest the Data](chapters/chapter-4.md)
+- Chapter 5 - [Segment the Data](chapters/chapter-5.md)
 
 ##### API and Technical Lab
 
-- Precursor - [Login and Accessing with Postman](/chapters/chapter-6-precursor.md)
-- Chapter 6 - [Define the Schema](/chapters/chapter-6.md)
-- Chapter 7 - [Ingest the Data](/chapters/chapter-7.md)
-- Chapter 8 - [Query the Data](/chapters/chapter-8.md)
-- Chapter 9 - [Stream in Data](/chapters/chapter-9.md)
+- Precursor - [Login and Accessing with Postman](chapters/chapter-6-precursor.md)
+- Chapter 6 - [Define the Schema](chapters/chapter-6.md)
+- Chapter 7 - [Ingest the Data](chapters/chapter-7.md)
+- Chapter 8 - [Query the Data](chapters/chapter-8.md)
+- Chapter 9 - [Stream in Data](chapters/chapter-9.md)
 
 
 #### Administrative (remove before Summit)
 
-[Checklist for changes to 2018 Workbook by 1/30](/new-layout.md)
+[Checklist for changes to 2018 Workbook by 1/30](new-layout.md)
