@@ -1,4 +1,4 @@
-# Chapter 1. Setup: Before you start -  Pre-Authorization
+# Chapter 1. Setup: Before you start - Pre-Authorization
 
 ## Check access to Adobe Solutions
 
@@ -28,17 +28,13 @@ Download the resources listed on top and make sure they are accessible on your l
 In this workshop you would need the following items set on on your local:
 
 - [Postman](https://www.getpostman.com/apps)
+- [Fenix Web Server](http://fenixwebserver.com/)
+- PostgreSQL [MacOS](https://www.postgresql.org/download/macosx/) use the Homebrew method or [Windows](https://www.postgresql.org/download/windows/)
+- A text editor like [VS Code](https://code.visualstudio.com/download)
 
 For Windows users, please make sure you have **OpenSSL** set up
 
 - Download an OpenSSL client [OpenSSL](https://bintray.com/vszakats/generic/download_file?file_path=openssl-1.1.1-win64-mingw.zip)
-- Extract the folder and copy it to the `C:/libs/` location.
-- Open a command prompt and run the following commands:
-```shell
-set OPENSSL_CONF=C:/libs/openssl-1.1.1-win64-mingw/openssl.cnf
-cd C:/libs/openssl-1.1.1-win64-mingw/
-```
-- Leave this command prompt open as you will need it later.
 
 Mac users will be able to use the default version of **OpenSSL** included with MacOS.
 

@@ -1,4 +1,4 @@
-# Chapter 1. Setup: XDM and Experience Platform Overview
+# Chapter 2. Setup: XDM and Experience Platform Overview
 
 ## A Story on Experience Platform
 
