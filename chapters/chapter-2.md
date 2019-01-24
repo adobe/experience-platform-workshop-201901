@@ -54,13 +54,6 @@ Adobe Campaign is one use-case for Adobe Experience Cloud products living on Exp
 
 ---
 
-## In-Workshop Help & Feedback
-
-Slack channel (for Adobe Internal): #acp-workshop-planning
-(or call one of our facilitors over)
-
----
-
 ### Navigate
 
 **Previous:** Chapter 1 - [Setup: Before you start: Pre-Authorization](chapter-1.md)
