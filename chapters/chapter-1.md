@@ -5,7 +5,7 @@
 - Go to [Adobe Admin Console](https://adminconsole.adobe.com) and make sure you have access to the workshop org
   - Refer to [Admin Console helpx page](https://helpx.adobe.com/enterprise/using/admin-console.html) if you run into issues accessing your org.
 - In your organization, make sure you have access to the following Adobe Solutions
-  - Adobe Cloud Platform
+  - Adobe Experience Platform
 
 ---
 
@@ -33,6 +33,12 @@ For Windows users, please make sure you have **OpenSSL** set up
 
 - Download an OpenSSL client [OpenSSL](https://bintray.com/vszakats/generic/download_file?file_path=openssl-1.1.1-win64-mingw.zip)
 - Extract the folder and copy it to the `C:/libs/` location.
+- Open a command prompt and run the following commands:
+```shell
+set OPENSSL_CONF=C:/libs/openssl-1.1.1-win64-mingw/openssl.cnf
+cd C:/libs/openssl-1.1.1-win64-mingw/
+```
+- Leave this command prompt open as you will need it later.
 
 Mac users will be able to use the default version of **OpenSSL** included with MacOS.
 
