@@ -38,4 +38,4 @@
 
 ### Navigate
 
-**Previous:** Chapter 8 - [Technical: Querty the Data](chapter-8.md)
+**Previous:** Chapter 8 - [Technical: Query the Data](chapter-8.md)

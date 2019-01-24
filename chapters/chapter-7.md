@@ -41,67 +41,67 @@ Once customer profile data exists within the platform, integrations with the com
 1.  Start by expanding the `Chapter 4` & `List Datasets` folder in postman under `Adobe Experience Platform`.
 1.  Skip over `Catalog: Get Datasets` and instead select the `Catalog: Get Datasets Limit 5` action and click `Send`.
 
-    ![](/images/chapter-4/get_datasets.png)
+    ![](../images/chapter-4/get_datasets.png)
 
     In the response pane you can scroll down and see the top five datasets. We are limiting the number of datasets returned to five in order have the query return quickly and not process too much data.
 
 1.  Next let's run the `Catalog: Get Batches` action by selecting it and clicking `Send`.
 
-    ![](/images/chapter-4/get_batches_in_dataset.png)
+    ![](../images/chapter-4/get_batches_in_dataset.png)
 
     Datasets can consist of multiple batches.
 
 1.  Finally let's run the `Catalog: Get Dataset Files` action by selecting it and clicking `Send`.
 
-    ![](/images/chapter-4/get_files_in_dataset.png)
+    ![](../images/chapter-4/get_files_in_dataset.png)
 
     In this case we'll get a list of files in the dataset and the metadata will include which batch it is from. Now that we've learned how to query datasets let's get busy creating one.
 
 1.  Expand the `Create Dataset` folder in postman under `Chapter 4 - Ingest the Data`, select the `Catalog: Create Dataset` action and click `Send`.
 
-    ![](/images/chapter-4/create_dataset.png)
+    ![](../images/chapter-4/create_dataset.png)
 
     The call will create a new dataset and return a ID we can use in future calls. The `"unifiedProfile": ["enabled:true"]` flag within the body ensures that this dataset is automatically included in the Unified Profile Service, which we will detail more in Chapter 5.
 
     Remember that the DataSet is based on the schema you select like Profile.
 
-    ![](/images/chapter-4/overview-2.png)
+    ![](../images/chapter-4/overview-2.png)
 
     Once created it will conceptually look like this:
 
-    ![](/images/chapter-4/overview-3.png)
+    ![](../images/chapter-4/overview-3.png)
 
 1.  Next we'll call `Catalog: Get Dataset` to inspect the dataset:
 
-    ![](/images/chapter-4/create_dataset_verify.png)
+    ![](../images/chapter-4/create_dataset_verify.png)
 
     In the response area of the postman call you view the datasets metadata.
 
 1.  Now that we've successfully created a dataset we'll create a batch so we can start ingesting files.
 
-    ![](/images/chapter-4/overview-4.png)
+    ![](../images/chapter-4/overview-4.png)
 
     Expand the `Create Batch` folder, select `Ingest: Create Batch` and click `Send`:
 
-    ![](/images/chapter-4/create_batch.png)
+    ![](../images/chapter-4/create_batch.png)
 
 1.  Next we'll upload a file to the batch.
 
-    ![](/images/chapter-4/overview-5.png)
+    ![](../images/chapter-4/overview-5.png)
 
     Select `Ingest: Upload File` then click on the `Body` tab.
 
-    ![](/images/chapter-4/upload_file_body.png)
+    ![](../images/chapter-4/upload_file_body.png)
 
 1.  From there you'll need to select a file to upload by clicking on `Choose Files` and selecting [ProfileDataSample.parquet](data/ProfileDataSample.parquet).
 
-    ![](/images/chapter-4/upload_file_selected.png)
+    ![](../images/chapter-4/upload_file_selected.png)
 
     Then click `Send` to upload the file. If the upload succeeds you won't see anything in the response section other than a 200 OK.
 
 1.  Since batches may contain multiple files we have to make an additional call to close off the batch to indicate that the batch is now ready for processing.
 
-    ![](/images/chapter-4/overview-6.png)
+    ![](../images/chapter-4/overview-6.png)
 
     So select the `Ingest: Close Batch` action and click `Send`.
 
@@ -109,39 +109,39 @@ Once customer profile data exists within the platform, integrations with the com
 
 1.  If we've done everything right up until this point the file and batch should be successfully ingested. In order to check on that we'll open the `Batch Status` folder, select the `Batch by ID` action and click `Send`.
 
-    ![](/images/chapter-4/get_batch_status.png)
+    ![](../images/chapter-4/get_batch_status.png)
 
     In the response section pay close attention to the value of `status`. We want it to say `success` but if it says `processing` it just means we have to wait a bit and make this postman request again.
 
     In the meantime, this is what the response would look like _if_ the ingested file brings up a `failed` status - likely due to not being in the correct format for that dataset:
 
-    ![](/images/chapter-4/get_batch_status_failed.png)
+    ![](../images/chapter-4/get_batch_status_failed.png)
 
 1.  Once we've seen the file in the batch has been successfully ingested we can check to see how many files are in the batch. Select the `Files in Batch` action and click `Send`.
 
-    ![](/images/chapter-4/get_batch_files.png)
+    ![](../images/chapter-4/get_batch_files.png)
 
     The response pane will show you how many files are in this batch. In our case there should only be one file.
 
 1.  Let's walk back up the containers and check on the status of our dataset. Expand the `Dataset Status` folder, select the `Catalog: Get Dataset` action and click `Send`.
 
-    ![](/images/chapter-4/dataset_status.png)
+    ![](../images/chapter-4/dataset_status.png)
 
     Scroll down in the response pane until you find `lastBatchStatus` property which should read as `success`.
 
 1.  Things are looking good for our dataset but what if we want to get more information about the files stored in the dataset. Then we open the `Data Access` folder, select `Data Export: Get File Details` action and hit `Send`.
 
-    ![](/images/chapter-4/get_file_details.png)
+    ![](../images/chapter-4/get_file_details.png)
 
     This response contains important metadata like the file name and file size.
 
 1.  Finally, let's take a look at the file stored in data services.
 
-    ![](/images/chapter-4/overview-7.png)
+    ![](../images/chapter-4/overview-7.png)
 
     Select the `Data Export: Get File` action and hitting `Send`.
 
-    ![](/images/chapter-4/get_file_contents.png)
+    ![](../images/chapter-4/get_file_contents.png)
 
     In this case the response is not that useful to us as .parquet files are binary in format so they are difficult to read. However, it should make customers happy to know whatever data they import into data services can be exported as well.
 

@@ -32,23 +32,23 @@ Building a customer loyalty program requires a foundation. Here, we will define 
 1. Start by expanding the `Chapter 3` & `List Schemas` folder in postman under `Adobe Experience Platform`.
 1. Select the `XDM: Get All Schemas` action and click `Send`.
 
-   ![](/images/chapter-3/get_all_schemas.png)
+   ![](../images/chapter-3/get_all_schemas.png)
 
    In the response pane you can scroll down and see all the schemas that are available in XDM.
 
 1. There sure are a lot of schemas available in XDM but let's drill down a bit and view the `profile` schema. If you select `XDM: Get Profile Schema` and click `Send` you should see something similar to:
 
-   ![](/images/chapter-3/get_profile_schema.png)
+   ![](../images/chapter-3/get_profile_schema.png)
 
 1. Now that we've seen the API calls to query schema let's move on to creating a custom schema of our own. Expand the `Create Schema` folder under `Chapter 3` in postman and select `XDM: Create New Schema` and click `Send`.
 
-   ![](/images/chapter-3/create_schema.png)
+   ![](../images/chapter-3/create_schema.png)
 
    In the response section you will the path to your newly created schema which we will be using to create a dataset in `Chapter 4`.
 
 1. Now select `XDM: Get Custom Profile Schema` and click `Send`.
 
-   ![](/images/chapter-3/get_custom_profile_schema.png)
+   ![](../images/chapter-3/get_custom_profile_schema.png)
 
    The response section should return the details of the schema which look an awful lot like `Profile` schema. We've included a sample [ProfileXDM.json](data/profileXDM.json) file in the repository if you'd like to compare them side by side.
 

@@ -29,29 +29,29 @@ Let's show how we can visually build a segment - a great tool to look at your Pr
 1.  Head back to the main [Platform UI landing page](https://platform.adobe.com) and click on "Unified Profile", and then click the "Segmentation" tab. Here you'll see the "All Males" segement that we defined in the API already here.
 
 
-    ![](/images/chapter-5/ui-1-segmentation_landing.png)
+    ![](../images/chapter-5/ui-1-segmentation_landing.png)
 
 1. Click on "New Segment" and name it "All Females" in the "Edit Details" area.
 
-   ![](/images/chapter-5/ui-2-new_segment.png)
+   ![](../images/chapter-5/ui-2-new_segment.png)
 
 1. First thing is to set our filter to define the segment. On the left side you'll see a list of fields based on the schema that make up the data in our Unified Profile database. Search for "gender" in the search box, and drag the first entry (Profile > Person > Gender) to the filter box on the right.
 
-   ![](/images/chapter-5/ui-3-segment_picker.png)
+   ![](../images/chapter-5/ui-3-segment_picker.png)
 
 1. You'll be promped to select a default value for this field filter based on its possible values. Select "equals" (already selected) and "Female". You'll see the estimate gauge at the top, showing 2750 profiles available, now estimates your filtered segment will contain about 1560 profiles.
 
-   ![](/images/chapter-5/ui-4-segment_filter.png)
+   ![](../images/chapter-5/ui-4-segment_filter.png)
 
 1. We can nest additional filters onto this segment to make it smaller. Let's say it's September, and we are running a birthday promotion for our female customers. Search for "birth month" in the filter search, and drag the "Profile > Person > Birth month" field under the Gender filter, to add it as an "And", and set it equal to 9.
 
-   ![](/images/chapter-5/ui-5-segment_filter_and.png)
+   ![](../images/chapter-5/ui-5-segment_filter_and.png)
 
    You will see now that we have a specific segment of 118 profiles that we can target with this promotion! Since we're more specific now, edit the title of the segment to say "September-Born Females" instead.
 
 1. Now that we've found our segment, hit "Create Segment". Now our segment will be saved to the Segmentation list alongside our API-created segment and can be used by other Platform-integrated solutions like Adobe Campaign! (In fact, Adobe Campaign on Experience Platform uses this Segment Builder UI directly inside its audience interface)
 
-   ![](/images/chapter-5/ui-6-segment_created.png)
+   ![](../images/chapter-5/ui-6-segment_created.png)
 
 Great work! Now we've run through the basics of setting up your customer loyalty system based on Profile data - defining our data schema, ingesting data for that schema into Unified Profile, and segmenting our Unified Profile entries based on the segments you're targeting. What else can we do with this data now, and how else can we use or integrate into Adobe Experience Platform? We'll cover that next!
 

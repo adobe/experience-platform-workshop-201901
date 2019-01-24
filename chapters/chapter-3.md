@@ -30,27 +30,27 @@ Building a customer loyalty program requires a foundation. Here, we will define 
 
 1. We start with the Experience Platform landing page, which appears after navigating to [https://platform.adobe.com/](https://platform.adobe.com/) and logging in with your Adobe ID credentials.
 
-	![](/images/chapter-3/ui-1-home.png)
+	![](../images/chapter-3/ui-1-home.png)
 
 1. From the this page, let's take a look at the many standard and custom XDM schema available to use by clicking the "Data Model" tab. Scroll through the list of available standard XDM data schema.
 
-	![](/images/chapter-3/ui-2-schema.png)
+	![](../images/chapter-3/ui-2-schema.png)
 
 1. Open "Profile" data schema and explore the visual structure of a standard XDM schema. Feel free to look at a few others as well.
 
-	![](/images/chapter-3/ui-3-profile.png)
+	![](../images/chapter-3/ui-3-profile.png)
 
 1. We can easily extend the core Profile XDM schema to fit our needs. For example, we can add a "loyaltyID" field to Profile by clicking the "+" button in the desired level. Try this out, and set the data type, but hit "CANCEL" when done so that we don't change this schema for now.
 
-	![](/images/chapter-3/ui-4-addfield.png)
+	![](../images/chapter-3/ui-4-addfield.png)
 
-	![](/images/chapter-3/ui-4-addfield2.png)
+	![](../images/chapter-3/ui-4-addfield2.png)
 
 1. We can also build schema from scratch - particularly if you have specific product data for your retail website, or reservation data for your hotel reservation system. From the "Data Models" tab, we can create a schema simply by clicking "Create Schema". Play with it here, but don't save your schema. The API steps after this will be your time to create.
 
-	![](/images/chapter-3/ui-5-addschema.png)
+	![](../images/chapter-3/ui-5-addschema.png)
 
-	![](/images/chapter-3/ui-6-defineschema.png)
+	![](../images/chapter-3/ui-6-defineschema.png)
 
 
 ---
