@@ -18,6 +18,6 @@ Need to split up the content between UI and API, as the first half of Partner su
 1. [ ] \(Simon) Build local-server page to use for Launch streaming
 1. [ ] \(Simon) Create master admin account to give to users to do their own provisioning
 1. [ ] \(Simon) Set up Adobe.com accounts for non-Adobe users
-1. [ ] \(Simon) Host repo on external Adobe Github
+1. [x] \(Simon) Host repo on external Adobe Github
 
 [Back to Workbook](/README.md)
