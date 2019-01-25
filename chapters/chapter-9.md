@@ -116,6 +116,8 @@
 
 Some elements of Launch are pre-packaged for sake of time.
 
+#### Creating a Launch property, data elements, and rules
+
 1. We will be re-using the datasets we created with the UI in Chapter 3, which are "SPP Profile - [first initial, last name]" and "SPP ExperienceEvent - [first initial, last name]".
 
     ![](../images/chapter-9/launch-setup-4.png)
@@ -145,10 +147,10 @@ Some elements of Launch are pre-packaged for sake of time.
     ![](../images/chapter-9/launch-setup-9.png)
 
 1. Click the "Add Data Element" button. The create screen will open; create your element with the following properties (matching the screenshot):
-  1.  Name: Language - _This is the name that we will refer to when sending data elements_
-  1.  Extension: Core - _The "Core" extension is the base extension for Launch; more extensions can be added for different use cases_
-  1.  Data Element Type: JavaScript Variable - _This is the type of value we are looking for within the WeTravel page to populate the data element_
-  1.  Path to variable: navigator.language - _This is the specific JavaScript Variable (determined by Data Element Type) to look for within our WeTravel site_
+   1.  Name: Language - _This is the name that we will refer to when sending data elements_
+   1.  Extension: Core - _The "Core" extension is the base extension for Launch; more extensions can be added for different use cases_
+   1.  Data Element Type: JavaScript Variable - _This is the type of value we are looking for within the WeTravel page to populate the data element_
+   1.  Path to variable: navigator.language - _This is the specific JavaScript Variable (determined by Data Element Type) to look for within our WeTravel site_
 
     ![](../images/chapter-9/launch-setup-10.png)
 
@@ -157,8 +159,8 @@ Some elements of Launch are pre-packaged for sake of time.
     ![](../images/chapter-9/launch-setup-11.png)
 
 1. Let's take a look at the extensions we will need for our WeTravel site. Click the "Extensions" tab. You'll see that the Core extension is there by default, and that we've already had the following extensions installed:
-  1. Adobe Experience Platform - _This is the extension needed to send data specifically to our Experience Platform instance_
-  1. Experience Cloud ID Service - _This is the extension that allows us to identify the unique Experience Cloud ID attribute across all Adobe products_
+   1. Adobe Experience Platform - _This is the extension needed to send data specifically to our Experience Platform instance_
+   1. Experience Cloud ID Service - _This is the extension that allows us to identify the unique Experience Cloud ID attribute across all Adobe products_
 
     ![](../images/chapter-9/launch-setup-12.png)
 
@@ -187,8 +189,8 @@ Some elements of Launch are pre-packaged for sake of time.
     ![](../images/chapter-9/launch-setup-20.png)
 
 1. Now let's add another variable to send in our beacon - the Language data element that we created earlier. Click on "Add Another" and create the following:
-  1. variable: environment.browserDetails.acceptLanguage
-  1. value: %Language% - _(Selected this from the list of data elements by clicking the round stack icon next to the value field. It can also be typed in directly)_
+   1. variable: environment.browserDetails.acceptLanguage
+   1. value: %Language% - _(Selected this from the list of data elements by clicking the round stack icon next to the value field. It can also be typed in directly)_
 
     ![](../images/chapter-9/launch-setup-19.png)
 
@@ -196,25 +198,37 @@ Some elements of Launch are pre-packaged for sake of time.
 
 1. Let's save our changes. Click on "Keep Changes" to save our Action, and then "Save to Library and Build"
 
-1. We just set up our first rule to send an ExperienceEvent to Platform! Now let's do the same thing for same with Profile data, by taking a look at the "Sign Up" rule.
+1. [NEEDS TO ADD IMAGE] We just set up our first rule to send an ExperienceEvent to Platform! Now let's do the same thing for same with Profile data, by taking a look at the "Sign Up" rule. Clicking on "Core - Click" you can see the composition of the event that we're looking for - a click on the "Submit" button during sign-up.
 
     ![](../images/chapter-9/launch-setup-21a.png)
 
-1. look at event - click when sign up. look at action for AEP - select correct dataset on beacon rule
+    ![](../images/chapter-9/launch-setup-21b.png)
+
+1. Just like we did with the ExperienceEvent dataset, we need to select the correct dataset. Since this is a Profile-updating action, we want to send our data beacon to our "SPP - Profile [name]" dataset, so select that from the dropdown.
 
     ![](../images/chapter-9/launch-setup-21.png)
 
-1. Explore the actions for this rule. Correct the "personalEmail.address" field to "%Email Address%
+1. Explore the actions for this rule, as there are several already pre-populated. You'll notice that we are sending the following variables:
+   1. person.name.firstName
+   1. person.name.lastName
+   1. personalEmail.address
+   1. identities[0].id
+   1. identities[0].id.namespace.code
+   1. \_repo.createDate
+
+   You'll also see that the "personalEmail.address" value is "%%" and needs to be corrected. Clear this text box and then select the "Email Address" data element using the round stack icon next to the text box.
 
     ![](../images/chapter-9/launch-setup-22.png)
 
     ![](../images/chapter-9/launch-setup-23.png)
 
-1. save to library and build
+1. Click "Keep Changes" on the action, and thten "Save to Library and Build" on the rule. Click on the "Publishing" tab to watch the status of our build and see it succeed.
 
     ![](../images/chapter-9/launch-setup-24.png)
 
-done setting up! now let's insert this into our SPA
+### Streaming a Launch data beacon into Platform from WeTravel
+
+Now we've got a Launch property setup, and a WeTravel instance running with the Launch streaming endpoint included. Let's watch it stream data into Experience Platform.
 
 1. Go to your SPA, open inspector, to network tab
 1. refresh the page
@@ -225,10 +239,6 @@ done setting up! now let's insert this into our SPA
 1. do Profile API lookup on Postman using email
 1. do ExperienceEvent API lookup on Postman using ECID
 1. go to monitoring tab, check unified profile ingestion
-
-
-
-### Streaming a Launch data beacon into Platform
 
 ---
 
