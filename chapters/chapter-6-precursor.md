@@ -113,7 +113,7 @@ Using Adobe AdminConsole to manage an Experience Platform instance, manage Produ
 
    ![](../images/chapter-2/postman_import.png)
 
-   Select the [ExperiencePlatform.postman_collection.json](postman/ExperiencePlatform.postman_collection.json) collection file from this repository.
+   Select the [PlatformSupport.postman_collection.json](postman/PlatformSupport.postman_collection.json) collection file from this repository.
 
 1. Next we need to import our environment. Click on the settings logo
 
@@ -127,11 +127,11 @@ Using Adobe AdminConsole to manage an Experience Platform instance, manage Produ
 
    ![](../images/chapter-2/postman_import_env.png)
 
-1. Select the [ExperiencePlatform.postman_environment.json](postman/ExperiencePlatform.postman_environment.json) file to import the environment.
+1. Select the [PlatformSupport.postman_environment.json](postman/PlatformSupport.postman_environment.json) file to import the environment.
 
    ![](../images/chapter-2/postman_after_env_import.png)
 
-1. Now click on the newly imported `Adobe Experience Platform - Environment`.
+1. Now click on the newly imported `Platform Summit - Environment`.
 
    ![](../images/chapter-2/postman_set_env.png)
 
@@ -164,17 +164,17 @@ Using Adobe AdminConsole to manage an Experience Platform instance, manage Produ
    notepad private.key
    ```
 
-   Copy the entire key to the keyboard, including the `-----BEGIN PRIVATE KEY-----` and `-----END PRIVATE KEY-----` lines.
+   Copy the entire key to the keyboard, including the `-----BEGIN PRIVATE KEY-----` and `-----END PRIVATE KEY-----` lines up to the last `-`.
 
 1. Click `Update` and close the `Manage Environments` dialog.
 
-1. Now make sure you select the `Adobe Experience Platform - Environment` from the environments drop down at the top right of POSTMan.
+1. Now make sure you select the `Platform Summit - Environment` from the environments drop down at the top right of POSTMan.
 
    ![](../images/chapter-2/postman_experience_platform_env.png)
 
 1. After all this setup you are now ready to generate an JWT and bearer token to interact with Adobe I/O. In order to make this process easier we'll be using an Adobe I/O Runtime action.
 
-   From our newly imported `Adobe Experience Platform` collection, open chapter 2 and click on `Adobe I/O Runtime: Generate Auth`. Then click on the body tab:
+   From our newly imported `Platform Summit` collection, open chapter 2 and click on `Adobe I/O Runtime: Generate Auth`. Then click on the body tab:
 
    ![](../images/chapter-2/postman_auth_body.png)
 
