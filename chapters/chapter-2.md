@@ -1,4 +1,4 @@
-# Chapter 1. Setup: XDM and Experience Platform Overview
+# Chapter 2. Setup: XDM and Experience Platform Overview
 
 ## A Story on Experience Platform
 
@@ -51,13 +51,6 @@ Our customer loyalty program will be built upon the Unified Profile Service. Wit
 Adobe Campaign is one use-case for Adobe Experience Cloud products living on Experience Platform. Based on a robust, hydrated Unified Profile for your customers, you can segment your customers based on Profile or behavioral attributes - birthday campaigns, re-activation for lost customers, points-based transactional emails, and more. Campaign Experience Platform integrates Experience Platform's Segmentation UI directly to deliver audiences straight from Unified Profile.
 
 ![](../images/chapter-1/adobecampaign-1.png)
-
----
-
-## In-Workshop Help & Feedback
-
-Slack channel (for Adobe Internal): #acp-workshop-planning
-(or call one of our facilitors over)
 
 ---
 

@@ -60,4 +60,4 @@ Great work! Now we've run through the basics of setting up your customer loyalty
 ### Navigate
 
 **Previous:** Chapter 4 - [UI: Ingest the Data](chapter-4.md)
-**Next:** (API AND TECHNICAL LAB) Precursor - [Login and Accessing with Postman](chapter-6.md)
+**Next:** (API AND TECHNICAL LAB) Precursor - [Login and Accessing with Postman](chapter-6-precursor.md)

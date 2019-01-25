@@ -1,2 +1,4 @@
 _site
 .DS_Store
+private.key
+certificate_pub.crt
