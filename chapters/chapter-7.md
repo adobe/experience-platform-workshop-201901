@@ -38,7 +38,7 @@ Once customer profile data exists within the platform, integrations with the com
 ### Data Querying & Ingestion
 
 1.  Building on the tasks we completed in [chapter 3](chapters/chapter-3.md) we'll create a dataset using our custom schema type and ingest some data.
-1.  Start by expanding the `Chapter 4` & `List Datasets` folder in postman under `Adobe Experience Platform`.
+1.  Start by expanding the `Chapter 7` & `List Datasets` folder in postman under `Adobe Experience Platform`.
 1.  Skip over `Catalog: Get Datasets` and instead select the `Catalog: Get Datasets Limit 5` action and click `Send`.
 
     ![](../images/chapter-4/get_datasets.png)
@@ -57,7 +57,7 @@ Once customer profile data exists within the platform, integrations with the com
 
     In this case we'll get a list of files in the dataset and the metadata will include which batch it is from. Now that we've learned how to query datasets let's get busy creating one.
 
-1.  Expand the `Create Dataset` folder in postman under `Chapter 4 - Ingest the Data`, select the `Catalog: Create Dataset` action and click `Send`.
+1.  Expand the `Create Dataset` folder in postman under `Chapter 7 - Ingest the Data`, select the `Catalog: Create Dataset` action and click `Send`.
 
     ![](../images/chapter-4/create_dataset.png)
 
