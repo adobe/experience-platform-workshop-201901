@@ -114,57 +114,100 @@
 
 ### Setting up Adobe Launch
 
-#### in-depth
-1. create SPA
-2. open launch at https://launch-demo.adobe.com
-3. login, go to SPP 1 org
-4. click "new property"
-5. name is "SPP App Property - firstinitial/lastname"
-6. Platform = web. Domain = URL to SPA. SAVE and Open
-7. homepage
-8. go to extensions. catalog. add experience cloud
-9. add experience platform. create streaming endpoint. "Launch Streaming Endpoint - firstinitial/lastname", source ID = "Launch-firstinitial/lastname" - SAVE
-10. select the endpoint, then SAVE
-11. go to Environments, select "Development", click the box
-12. copy script tag and place in header of SPA
-13. go to Publishing and add new library. name "wetravel" and environment "Development"
-14. select Working Library as wetravel
-14. click "add all changed resources"
-15. save and build for development, should appear
-16. data elements - create new data element. name = "Get ECID"
-17. Custom code -> copy paste 
-  if(typeof Visitor=="function")
-  {
-      var visitor = Visitor.getInstance('DDF07AE95C411FED0A495C2A@AdobeOrg');
-      return visitor.getMarketingCloudVisitorID();
-  } else return '';
-18. 
+Some elements of Launch are pre-packaged for sake of time.
 
-#### simplified (TTT)
-1. Create SPA
-1. Create dataset on Platform, "SPP Dataset - first/last"
+1. Create datasets on Platform, "SPP ExperienceEvent - first/last" and Profile
+
+    ![](../images/chapter-9/launch-setup-1.png)
+
+    ![](../images/chapter-9/launch-setup-3.png)
+
+    ![](../images/chapter-9/launch-setup-4.png)
+
 1. Open launch at https://launch-demo.adobe.com
 1. Login, go to SPP 1 org
 1. Find the property associated with your user number and open it
+
+    ![](../images/chapter-9/launch-setup-5.png)
+
 1. copy Development install link from web install
+
+    ![](../images/chapter-9/launch-setup-6.png)
+
+    ![](../images/chapter-9/launch-setup-7.png)
+
 1. paste this into the header of your SPA (for later)
+
+    ![](../images/chapter-9/launch-setup-8.png)
+
 1. Look through data elements, see ones already made. We will create one to send the language of our browser to Platform
+
+    ![](../images/chapter-9/launch-setup-9.png)
+
 1. Add data element, create with:
   a.  Name: Language
   b.  Extension: Core
   c.  Data Element Type: JavaScript Variable
   d.  Path to variable: navigator.language
+
+    ![](../images/chapter-9/launch-setup-10.png)
+
 1. look at Working Library build status til green
+
+    ![](../images/chapter-9/launch-setup-11.png)
+
 1. Go to extensions, see EC, EP extensions, open config for EP
+
+    ![](../images/chapter-9/launch-setup-12.png)
+
 1. Create streaming endpoint, name it "Launch Streaming Endpoint - first/last", with Sourcei = "Launch-first/last"
+
+    ![](../images/chapter-9/launch-setup-13.png)
+
 1. Go to rules. see what exists. look into "Page Visit" - event is "Page Bottom" (this is for experienceevent)
-1. look at AEP Beacon, click in
+
+    ![](../images/chapter-9/launch-setup-14.png)
+
+1. look at actions. see flow.
+
+    ![](../images/chapter-9/launch-setup-15.png)
+
+1. Click on Experience Cloud ID Service. see that it is setting ECID from what is being sent to it, save and go back
+
+    ![](../images/chapter-9/launch-setup-16.png)
+
+1. Click on Experience Platform Send Beacon
+
+    ![](../images/chapter-9/launch-setup-=17.png)
+
 1. Select your dataset from dataset list. note the schema nad dataset ID
+
+    ![](../images/chapter-9/launch-setup-20.png)
+
 1. Add another element to send in beacon - "environment.browserDetails.acceptLanguage" with value "%Language%" chosen from the list
+
+    ![](../images/chapter-9/launch-setup-19.png)
+
+    ![](../images/chapter-9/launch-setup-18.png)
+
 1. Keep changes -> save and build
 1. same with Sign Up rule (this is for Profile)
+
+    ![](../images/chapter-9/launch-setup-21a.png)
+
 1. look at event - click when sign up. look at action for AEP - select correct dataset on beacon rule
+
+    ![](../images/chapter-9/launch-setup-21.png)
+
+1. Explore the actions for this rule. Correct the "personalEmail.address" field to "%Email Address%
+
+    ![](../images/chapter-9/launch-setup-22.png)
+
+    ![](../images/chapter-9/launch-setup-23.png)
+
 1. save to library and build
+
+    ![](../images/chapter-9/launch-setup-24.png)
 
 done setting up! now let's insert this into our SPA
 
@@ -177,8 +220,6 @@ done setting up! now let's insert this into our SPA
 1. do Profile API lookup on Postman using email
 1. do ExperienceEvent API lookup on Postman using ECID
 1. go to monitoring tab, check unified profile ingestion
-
-
 
 
 
