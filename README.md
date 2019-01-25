@@ -49,6 +49,7 @@ These will be supplied to you with a handout and are unique to each registered p
 - [Experience Platform API Postman Environment](postman/ExperiencePlatform.postman_environment.json)
 - Sample Profile XDM Data
   - [ProfileData.parquet](data/ProfileDataSample.parquet)
+- [WeTravel Website](data/WeTravel-local.zip)
 - [Link to Adobe Experience Platform sign-in page](https://platform.adobe.com)
 
 #### Chapters
@@ -71,7 +72,6 @@ These will be supplied to you with a handout and are unique to each registered p
 - Chapter 7 - [Ingest the Data](chapters/chapter-7.md)
 - Chapter 8 - [Query the Data](chapters/chapter-8.md)
 - Chapter 9 - [Stream in Data](chapters/chapter-9.md)
-
 
 #### Administrative (remove before Summit)
 
