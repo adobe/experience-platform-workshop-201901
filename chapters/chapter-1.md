@@ -1,31 +1,31 @@
 # Chapter 1. Setup: Before you start - Pre-Authorization
 
-## Check access to Adobe Solutions
+## Learning Objectives
 
-- Go to [Adobe Admin Console](https://adminconsole.adobe.com) and make sure you have access to the workshop org
-  - Refer to [Admin Console helpx page](https://helpx.adobe.com/enterprise/using/admin-console.html) if you run into issues accessing your org.
-- In your organization, make sure you have access to the following Adobe Solutions
-  - Adobe Experience Platform
+- Understand AdminConsole capabilities for Experience Platform
+- Understand the role of Product Profiles
+- Access control through service -settings
+- Managing users and administrators
+
+## Lab Resources
+
+- Experience Platform UI: [https://platform.adobe.com/](https://platform.adobe.com/)
+- Adobe I/O Console: [https://console.adobe.io/](https://console.adobe.io/)
+
+## Lab Tasks
+
+- Download Required Tools
+- Log into Adobe Experience Platform
+  - Create Product Profile
+  - Add Users
+  - Add as Admin
+- Verify Access to Adobe I/O Console
 
 ---
 
-## Check access to Adobe I/O Console
+## Download Required Tools
 
-- Go to [Adobe I/O Console](https://console.adobe.io/), step through the beginning few steps of creating a new integration till you get to a list of APIs.
-  - If you have administrative privileges for your organization and you are authorized for Adobe Solutions, you should see them listed and not grayed out on this screen.
-  - If you do not have the required permissions, contact an instructor for help.
-
----
-
-## Set up your local
-
-### Download
-
-Download the resources listed on top and make sure they are accessible on your local.
-
-#### Required tools
-
-In this workshop you would need the following items set on on your local:
+Download the resources listed below and make sure they are accessible on your local.
 
 - [Postman](https://www.getpostman.com/apps)
 - [Fenix Web Server](http://fenixwebserver.com/)
@@ -38,7 +38,64 @@ For Windows users, please make sure you have **OpenSSL** set up
 
 Mac users will be able to use the default version of **OpenSSL** included with MacOS.
 
-#### Recommended tools
+---
+
+## Login to Admin Console
+
+1. Navigate to [https://adminconsole.adobe.com](https://adminconsole.adobe.com) in your browser
+1. Login with the “master credentials for lab” that are provided on your personal lab-worksheet.
+
+   ![](../images/chapter-2/adminlogin.png)
+
+1. Select “Adobe Experience Platform”
+
+   ![](../images/chapter-2/data_services.png)
+
+1. Select “New Profile”
+
+   ![](../images/chapter-2/new_profile.png)
+
+1. Complete your Product Profile details (for prefix see your Lab worksheet):
+   - Profile Name : Profile-&lt;prefix&gt;
+   - Display Name : [V] Same as Profile Name
+   - Description: Product Profile for &lt;prefix&gt;
+   - Disable User notifications
+1. Click “Next”
+
+   ![](../images/chapter-2/next.png)
+
+1. Select the Services you want to enable for this Product Profile
+   - Enable “Data Science Workspace”
+   - Enable “Experience Query Service”
+1. Select “Done”
+
+   ![](../images/chapter-2/done.png)
+
+1. Click on the Product Profile you just created
+
+   ![](../images/chapter-2/product_profile.png)
+
+1. Click “Add User”
+
+   ![](../images/chapter-2/add_user.png)
+
+1. Type your own Personal AdobeId (see Lab Worksheet)
+
+   ![](../images/chapter-2/personal_adobe_id.png)
+
+1. Your user has been added to the Product Profile – you can now login into Experience Platform, but just one more thing…….
+1. Go back to “Overview”
+
+   ![](../images/chapter-2/adminlogin.png)
+
+1. Click “Add Admin”, Add your AdobeId and enable “System Administrator” privileges.
+1. Go to [https://platform.adobe.com/](https://platform.adobe.com/)
+
+---
+
+## Verify Access to Adobe I/O Console
+
+- Go to [Adobe I/O Console](https://console.adobe.io/) and ensure you can login using your Adobe ID.
 
 ---
 
