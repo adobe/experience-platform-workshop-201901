@@ -4,23 +4,21 @@
 
 - Understand the structure of XDM Schema
 - Learn to browse in view schema in UI
-- Learn to list, lookup, create, and extend schema in API
 
 ## Lab Resources
 
 - Experience Platform UI: [https://platform.adobe.com/](https://platform.adobe.com/)
-- Profile XDM in JSON format: [ProfileXDM.json](data/profileXDM.json)
 
 ## Lab Tasks
 
 - List all the schemas
 - Lookup the Profile schema
-- Define a custom Profle schema for use with XDM
-- Lookup the custom schema
+- Extend the Profle schema to include a Loyalty ID
+- Lookup a custom schema
 
 ## Story
 
-Building a customer loyalty program requires a foundation. Here, we will define a "basis profile", which will be a standard Profile XDM schema that will serve as the basis for each customer's profile, and thus the Universal Profile that would be used across Experience Platform. The basis profile can be hydrated by ingesting existing profile data (for example, from an existing customer database) or through point-to-point connections from Adobe products such as Launch - we can see the frame for this profile in the Experience Platform UI in this step.
+Building a customer loyalty program requires a foundation. Here, we will define a "basis profile", which will be a standard Profile XDM schema that will serve as the basis for each customer's profile, and thus the Universal Profile that will be used across Experience Platform. The basis profile can be hydrated by ingesting existing profile data (for example, from an existing customer database formatted in XDM) or through point-to-point connections from Adobe products such as Launch (covered in Chapter 9) - we can see the frame for this profile in the Experience Platform UI in this step.
 
 ---
 
