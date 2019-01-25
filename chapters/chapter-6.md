@@ -29,7 +29,7 @@ Building a customer loyalty program requires a foundation. Here, we will define 
 ### API: Schema Querying and Creation
 
 1. Now that you've successfuly been authenticated by following the steps in [Chapter 2](chapters/chapter-2.md) you are now ready to make API calls.
-1. Start by expanding the `Chapter 3` & `List Schemas` folder in postman under `Adobe Experience Platform`.
+1. Start by expanding the `Chapter 6` & `List Schemas` folder in postman under `Adobe Experience Platform`.
 1. Select the `XDM: Get All Schemas` action and click `Send`.
 
    ![](../images/chapter-3/get_all_schemas.png)
@@ -44,7 +44,7 @@ Building a customer loyalty program requires a foundation. Here, we will define 
 
    ![](../images/chapter-3/create_schema.png)
 
-   In the response section you will the path to your newly created schema which we will be using to create a dataset in `Chapter 4`.
+   In the response section you will the path to your newly created schema which we will be using to create a dataset in `Chapter 7`.
 
 1. Now select `XDM: Get Custom Profile Schema` and click `Send`.
 
