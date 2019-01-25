@@ -24,32 +24,6 @@
 
 ## Steps
 
-
-1. create SPA
-2. open launch at https://launch-demo.adobe.com
-3. login, go to SPP 1 org
-4. click "new property"
-5. name is "SPP App Property - firstinitial/lastname"
-6. Platform = web. Domain = URL to SPA. SAVE and Open
-7. homepage
-8. go to extensions. catalog. add experience cloud
-9. add experience platform. create streaming endpoint. "Launch Streaming Endpoint - firstinitial/lastname", source ID = "Launch-firstinitial/lastname" - SAVE
-10. select the endpoint, then SAVE
-11. go to Environments, select "Development", click the box
-12. copy script tag and place in header of SPA
-13. go to Publishing and add new library. name "wetravel" and environment "Development"
-14. click "add all changed resources"
-15. save and build for development, should appear
-16. data elements - create new data element. name = "Get ECID"
-17. Custom code -> copy paste 
-	if(typeof Visitor=="function")
-	{
-  		var visitor = Visitor.getInstance('DDF07AE95C411FED0A495C2A@AdobeOrg');
-  		return visitor.getMarketingCloudVisitorID();
-	} else return '';
-18. 
-
-
 =======
 
 ### Deploying webpage to your machine
@@ -139,6 +113,74 @@
     ![](../images/chapter-9/not-localhost.png)
 
 ### Setting up Adobe Launch
+
+#### in-depth
+1. create SPA
+2. open launch at https://launch-demo.adobe.com
+3. login, go to SPP 1 org
+4. click "new property"
+5. name is "SPP App Property - firstinitial/lastname"
+6. Platform = web. Domain = URL to SPA. SAVE and Open
+7. homepage
+8. go to extensions. catalog. add experience cloud
+9. add experience platform. create streaming endpoint. "Launch Streaming Endpoint - firstinitial/lastname", source ID = "Launch-firstinitial/lastname" - SAVE
+10. select the endpoint, then SAVE
+11. go to Environments, select "Development", click the box
+12. copy script tag and place in header of SPA
+13. go to Publishing and add new library. name "wetravel" and environment "Development"
+14. select Working Library as wetravel
+14. click "add all changed resources"
+15. save and build for development, should appear
+16. data elements - create new data element. name = "Get ECID"
+17. Custom code -> copy paste 
+  if(typeof Visitor=="function")
+  {
+      var visitor = Visitor.getInstance('DDF07AE95C411FED0A495C2A@AdobeOrg');
+      return visitor.getMarketingCloudVisitorID();
+  } else return '';
+18. 
+
+#### simplified (TTT)
+1. Create SPA
+1. Create dataset on Platform, "SPP Dataset - first/last"
+1. Open launch at https://launch-demo.adobe.com
+1. Login, go to SPP 1 org
+1. Find the property associated with your user number and open it
+1. copy Development install link from web install
+1. paste this into the header of your SPA (for later)
+1. Look through data elements, see ones already made. We will create one to send the language of our browser to Platform
+1. Add data element, create with:
+  a.  Name: Language
+  b.  Extension: Core
+  c.  Data Element Type: JavaScript Variable
+  d.  Path to variable: navigator.language
+1. look at Working Library build status til green
+1. Go to extensions, see EC, EP extensions, open config for EP
+1. Create streaming endpoint, name it "Launch Streaming Endpoint - first/last", with Sourcei = "Launch-first/last"
+1. Go to rules. see what exists. look into "Page Visit" - event is "Page Bottom" (this is for experienceevent)
+1. look at AEP Beacon, click in
+1. Select your dataset from dataset list. note the schema nad dataset ID
+1. Add another element to send in beacon - "environment.browserDetails.acceptLanguage" with value "%Language%" chosen from the list
+1. Keep changes -> save and build
+1. same with Sign Up rule (this is for Profile)
+1. look at event - click when sign up. look at action for AEP - select correct dataset on beacon rule
+1. save to library and build
+
+done setting up! now let's insert this into our SPA
+
+1. Go to your SPA, open inspector, to network tab
+1. refresh the page
+1. filter by "dcs" until you find your endpoint
+1. look at payload, expand the fields. observe all the becaon data from Page View
+1. sign up. click sign-up, look at payload. observe your profile data being sent
+1. copy your ECID
+1. do Profile API lookup on Postman using email
+1. do ExperienceEvent API lookup on Postman using ECID
+1. go to monitoring tab, check unified profile ingestion
+
+
+
+
 
 ### Streaming a Launch data beacon into Platform
 
