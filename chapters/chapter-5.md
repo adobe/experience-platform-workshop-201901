@@ -3,10 +3,7 @@
 ## Learning Objectives
 
 - Learn how to segment an audience of Profiles
-
-## Lab Resources
-
-- Video Demo: **Demonstration of Segment Builder** by Aaron Shields, Senior Product Manager, Experience Cloud
+- Demonstrate the power of the Unified Profile
 
 ## Lab Tasks
 
