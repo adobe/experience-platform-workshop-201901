@@ -18,7 +18,7 @@ Using Adobe AdminConsole to manage an Experience Platform instance, manage Produ
 
 ## Lab Tasks
 
-- Log into Adobe Cloud Platform
+- Log into Adobe Experience Platform
   - Create Product Profile
   - Add Users
   - Add as Admin
@@ -32,7 +32,7 @@ Using Adobe AdminConsole to manage an Experience Platform instance, manage Produ
 
    ![](../images/chapter-2/adminlogin.png)
 
-1) Select “Adobe Cloud Platform – Data Services”
+1) Select “Adobe Experience Platform – Data Services”
 
    ![](../images/chapter-2/data_services.png)
 
