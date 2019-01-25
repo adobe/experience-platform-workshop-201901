@@ -116,7 +116,7 @@
 
 Some elements of Launch are pre-packaged for sake of time.
 
-1. Create datasets on Platform, "SPP ExperienceEvent - first/last" and Profile
+1. We will be re-using the datasets we created with the UI in Chapter 3.
 
     ![](../images/chapter-9/launch-setup-1.png)
 
