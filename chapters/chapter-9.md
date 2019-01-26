@@ -138,9 +138,11 @@ Some elements of Launch are pre-packaged for sake of time.
 
     ![](../images/chapter-9/launch-setup-8.png)
 
-1. [NEED TO COMPLETE SCREEN] Open up the header of your WeTravel site, and paste this code into that header.
+1. Open up the "index.html" and "login.html" pages of your WeTravel site in your text.code edtior, and paste this code into the <head> tags of each file. This will enable Launch to run its rules on these two pages. _Remember to paste this snippet in BOTH files.
 
-    ![](../images/chapter-9/launch-weretail-snippet.png)
+    ![](../images/chapter-9/launch-weretail-snippet1.png)
+
+    ![](../images/chapter-9/launch-weretail-snippet2.png)
 
 1. Go to the "Data Elements" tab. This is where we will define elements from our WeTravel site to pull in values - names, emails, IDs, descriptors, etc. There are already a few populated in here that we will be using when we send data to Experience Platform. Here, we will create a new Data Element to record the language of our browser.
 
@@ -232,10 +234,26 @@ Now we've got a Launch property setup, and a WeTravel instance running with the 
 
 1. Go to your SPA, open inspector, to network tab
 1. refresh the page
+
+    ![](../images/chapter-9/launch-wetravel-homepage.png)
+
 1. filter by "dcs" until you find your endpoint
+
+    ![](../images/chapter-9/launch-wetravel-eebeacon-homepage.png)
+
 1. look at payload, expand the fields. observe all the becaon data from Page View
 1. sign up. click sign-up, look at payload. observe your profile data being sent
+
+    ![](../images/chapter-9/launch-wetravel-signup.png)
+
+    ![](../images/chapter-9/launch-wetravel-profilebeacon.png)
+
+    ![](../images/chapter-9/launch-wetravel-eebeacon.png)
+
 1. copy your ECID
+
+    ![](../images/chapter-9/launch-wetravel-ecid.png)
+
 1. do Profile API lookup on Postman using email
 1. do ExperienceEvent API lookup on Postman using ECID
 1. go to monitoring tab, check unified profile ingestion

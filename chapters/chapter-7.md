@@ -3,25 +3,15 @@
 ## Learning Objectives
 
 - Learn how to ingest XDM-formatted data files
-- Learn both the web UI and API interfaces
-- Understand the data governance features of Experience Platform
+- Learn the API interface
 
 ## Lab Resources
 
-- Experience Platform UI: [https://platform.adobe.com/](https://platform.adobe.com/)
 - Sample data .parquet file in Profile XDM format: [ProfileDataSample.parquet](data/ProfileDataSample.parquet)
 
 ## Lab Tasks
 
-- Ingest and explore a .parquet file in the Experience Platform UI
-- Understand data governance options in Experience Platform UI
 - Ingest and confirm a .parquet file in the Experience Platform API
-
-## Story Part 1: Using the UI
-
-To start the base of the loyalty program, most companies are likely to have existing customer data. Here, we will perform a batch ingestion of an existing data file that contains customer profiles, pre-formatted in Profile XDM format. From the perspective of an Analyst/Architect ("Archie"), this will allow us to start adding customer data to Experience Platform through the web UI interface, as well as preview the ingested datasets to confirm using a snapshot of the data that the file and data has been correctly imported. Some data files may not be properly formatted in to Profile XDM format - in which case, a data ingestion may come up as `failed`. In addition, some fields in our Profile schema may be sensitive information - for example, a customer's address and phone number. These will need to be export-controlled using data governance.
-
-For batch ingestion of data, it is important that the data is properly formatted into XDM prior to bringing it into our customer loyalty database on Experience Platform. Conversion of non-formatted data into Profile XDM will not be covered here, but will be assumed to have been performed prior by a Data Engineer ("Joe").
 
 ---
 

@@ -3,12 +3,10 @@
 ## Learning Objectives
 
 - Understand the structure of XDM Schema
-- Learn to browse in view schema in UI
 - Learn to list, lookup, create, and extend schema in API
 
 ## Lab Resources
 
-- Experience Platform UI: [https://platform.adobe.com/](https://platform.adobe.com/)
 - Profile XDM in JSON format: [ProfileXDM.json](data/profileXDM.json)
 
 ## Lab Tasks
