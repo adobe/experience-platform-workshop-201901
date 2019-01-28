@@ -1,4 +1,4 @@
-# Chapter 10. Segmentation: Building Segments from Unified Profiles with the API
+# Bonus Chapter 10. Segmentation: Building Segments from Unified Profiles with the API
 
 ## Learning Objectives
 
@@ -16,8 +16,8 @@
 
 ### Segmentation via the API
 
-1.  Now that we've ingested some data in [Chapter 4](/chapters/chapter-4.md) into our Unified Profile service, we're ready to begin segmenting the data in order to gain insights.
-1.  Start by expanding the `Chapter 5` & `Segmentation` folder in postman under `Adobe Experience Platform`.
+1.  Now that we've ingested some data in [Chapter 7](/chapters/chapter-7.md) into our Unified Profile service, we're ready to begin segmenting the data in order to gain insights.
+1.  Start by expanding the `Chapter 10` & `Segmentation` folder in postman under `Platform Summit`.
 1.  Select the `Profile: Create A Segment Definition` action. Note that in the body section of the action we are creating a simple segment that will include all males who have interacted with the system in the past 90 days.
 
     ![](../images/chapter-5/create_segment.png)
@@ -55,6 +55,7 @@
     ![](../images/chapter-5/create_segment_final.png)
 
     As you can see all of the people in the dataset are `male`.
+
 ---
 
 ### Navigate

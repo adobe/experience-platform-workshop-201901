@@ -204,4 +204,6 @@ Now we've got a Launch property setup, and a WeTravel instance running with the 
 
 **Previous:** Chapter 8 - [Technical - Querying: Using the Profile Query Service](chapter-8.md)
 
+**Next:** Bonus Chapter 10 - [Technical - Segmentation: Building Segments from Unified Profiles with the API](chapter-10.md)
+
 **Return Home:** [Workbook Index](../README.md)
