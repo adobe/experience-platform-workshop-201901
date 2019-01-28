@@ -146,11 +146,11 @@ Some elements of Launch are pre-packaged for sake of time. Rules, Data Elements 
    1. preferredLanguage
    1. mobilePhone.number
 
-You'll also see that the `identities[1].id` value is `DELETE` and needs to be corrected. This value sets one of the identities that Unified Profile uses to match XDM data to each other. Clear this text box and then select the `Email Address` data element using the round stack icon next to the text box.
+1. You'll also see that the `identities[1].id` value is `DELETE` and needs to be corrected. This value sets one of the identities that Unified Profile uses to match XDM data to each other. Clear this text box and then select the `Email Address` data element using the round stack icon next to the text box.
 
-    ![](../images/chapter-9/launch-setup-22.png)
+   ![](../images/chapter-9/launch-setup-22.png)
 
-    ![](../images/chapter-9/launch-setup-23.png)
+   ![](../images/chapter-9/launch-setup-23.png)
 
 1. Click `Keep Changes` on the action, and thten `Save to Library and Build` on the rule. Click on the `Publishing` tab to watch the status of our build and see it succeed.
 
