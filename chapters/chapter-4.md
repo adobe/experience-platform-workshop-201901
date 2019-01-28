@@ -90,6 +90,8 @@ For batch ingestion of data, it is important that the data is properly formatted
 
 ---
 
+#### Chapter Wrap
+
 Now that we've created our datasets and ingested our profile data into the Unified Profile through batch ingestion of an existinf file, we can segment our profiles using Experience Platform's Segment Builder in [Chapter 5](chapter-5.md). Let's move on.
 
 #### Additional Resources

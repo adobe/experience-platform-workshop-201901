@@ -56,6 +56,8 @@ Building a customer loyalty program requires a foundation. Here, we will define 
 
 ---
 
+#### Chapter Wrap
+
 Great! Now we understand the structure of XDM Schema and the ability we have to extend and create schema witin our Platform UI. Let's move on to the next step - creating datasets and ingesting data in [Chapter 4](chapter-4.md).
 
 #### Additional Resources

@@ -46,7 +46,7 @@ Mac users will be able to use the default version of **OpenSSL** included with M
 ## Login to Admin Console
 
 1. Navigate to [https://adminconsole.adobe.com](https://adminconsole.adobe.com) in your browser
-1. Login with the “Lab Admninistration” administrator credential that are provided on your personal lab-worksheet.
+1. Login with the “Lab Administration” administrator credential that are provided on your personal lab-worksheet.
 
    ![](../images/chapter-2/adminlogin.png)
 

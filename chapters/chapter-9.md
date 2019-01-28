@@ -239,17 +239,17 @@ Now we've got a Launch property setup, and a WeTravel instance running with the 
 
    ![](../images/chapter-9/launch-unifiedprofile-2.png)
 
-### Launch is set up!
+---
+
+#### Chapter Wrap
 
 Congratulations! You've got all the basics you need for your Adobe Experience Platform setup to build out not just a basis for customer loyalty programs, but also for data collection, storage, and analysis of your incoming customer data from batch ingestion (Chapters 4 and 7) and streaming data.
 
-The streaming capabilities of data into Experience Platform are not limited to websites - mobiel apps, POS devices, and other points of data capture can all stream behavioral and other types of data into Experience Platform using methods like Launch.
-
----
-
-
+The streaming capabilities of data into Experience Platform are not limited to websites - mobile apps, POS devices, and other points of data capture can all stream behavioral and other types of data into Experience Platform using methods like Launch.
 
 #### Additional Resources
+
+[Getting Started with Adobe Launch](https://docs.adobelaunch.com/getting-started)
 
 ---
 

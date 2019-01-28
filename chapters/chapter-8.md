@@ -161,7 +161,8 @@ Data scientists and others may need to do more specific lookups and queries on t
 
 ---
 
-**WRAP-UP OF PQS**
+#### Chapter Wrap
+
 
 #### Additional Resources
 

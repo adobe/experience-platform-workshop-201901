@@ -137,6 +137,8 @@ Once customer profile data exists within the platform, integrations with the com
 
 ---
 
+#### Chapter Wrap
+
 Well that was a lot of work to ingest the data. Let's move on to the next step which is segmenting the data and targeting specific users.
 
 #### Additional Resources

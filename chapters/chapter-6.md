@@ -53,6 +53,8 @@ While we were able to visually view schema, extend and create custom schema, tho
 
 ---
 
+#### Chapter Wrap
+
 With the creation of our custom schema we are ready to move on to the next step of creating datasets and data ingestion.
 
 #### Additional Resources
