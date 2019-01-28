@@ -66,7 +66,7 @@ These will be supplied to you with a handout and are unique to each registered p
 
 ##### Setup
 
-- Chapter 1 - [Before you start: Pre-Authorization](chapters/chapter-1.md)
+- Chapter 1 - [Before you start: Pre-Authorization and Tools](chapters/chapter-1.md)
 - Chapter 2 - [XDM and Experience Platform Overview](chapters/chapter-2.md)
 
 ##### UI-Based Lab
