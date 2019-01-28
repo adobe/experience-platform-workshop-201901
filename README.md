@@ -40,7 +40,7 @@ This workshop covers a portion of this story, that of establishing a basis profi
 
 ### Scope
 
-We will cover using the Experience Platform UI to perform XDM data ingestion and segmentation. The 2nd part oft he workshop will cover the same use-cases using the API, as well as using the Profile Query Service to query existing data, and setting up streaming data of behavioral and profile data from a website using Adobe Launch.
+We will cover using the Experience Platform UI to perform XDM data ingestion and segmentation. The 2nd part of the workshop will cover the same use-cases using the API, as well as using the Profile Query Service to query existing data, and setting up streaming data of behavioral and profile data from a website using Adobe Launch.
 
 ### Goals
 
@@ -90,7 +90,3 @@ These will be supplied to you with a handout and are unique to each registered p
 ##### Bonus API Content
 
 - Chapter 10 - [Segmentation: Segment the Data using the API](chapters/chapter-10.md)
-
-#### Administrative (remove before Summit)
-
-[Checklist for changes to 2018 Workbook by 1/30](new-layout.md)
