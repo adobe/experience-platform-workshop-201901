@@ -7,7 +7,7 @@
 
 ## Lab Resources
 
-- Sample data .parquet file in Profile XDM format: [ProfileDataSample.parquet](data/ProfileDataSample.parquet)
+- Sample data .parquet file in Profile XDM format: [ProfileDataSample.parquet](../data/ProfileDataSample.parquet)
 
 ## Lab Tasks
 
@@ -27,7 +27,7 @@ Once customer profile data exists within the platform, integrations with the com
 
 ### Data Querying & Ingestion
 
-1.  Building on the tasks we completed in [chapter 3](chapters/chapter-3.md) we'll create a dataset using our custom schema type and ingest some data.
+1.  Building on the tasks we completed in [chapter 6](chapters/chapter-6.md) we'll create a dataset using our custom schema type and ingest some data.
 1.  Start by expanding the `Chapter 7` & `List Datasets` folder in postman under `Adobe Experience Platform`.
 1.  Skip over `Catalog: Get Datasets` and instead select the `Catalog: Get Datasets Limit 5` action and click `Send`.
 

@@ -7,7 +7,7 @@
 
 ## Lab Resources
 
-- Profile XDM in JSON format: [ProfileXDM.json](data/profileXDM.json)
+- Profile XDM in JSON format: [ProfileXDM.json](../data/profileXDM.json)
 
 ## Lab Tasks
 
@@ -26,7 +26,7 @@ While we were able to visually view schema, extend and create custom schema, tho
 
 ### API: Schema Querying and Creation
 
-1. Now that you've successfuly been authenticated by following the steps in [Chapter 2](chapters/chapter-2.md) you are now ready to make API calls.
+1. Now that you've successfuly been authenticated by following the steps in [previous chapter](chapter-6-precursor.md) you are now ready to make API calls.
 1. Start by expanding the `Chapter 6` & `List Schemas` folder in postman under `Adobe Experience Platform`.
 1. Select the `XDM: Get All Schemas` action and click `Send`.
 
@@ -48,7 +48,7 @@ While we were able to visually view schema, extend and create custom schema, tho
 
    ![](../images/chapter-3/get_custom_profile_schema.png)
 
-   The response section should return the details of the schema which look an awful lot like `Profile` schema. We've included a sample [ProfileXDM.json](data/profileXDM.json) file in the repository if you'd like to compare them side by side.
+   The response section should return the details of the schema which look an awful lot like `Profile` schema. We've included a sample [ProfileXDM.json](../data/profileXDM.json) file in the repository if you'd like to compare them side by side.
 
 With the creation of our custom schema we are ready to move on to the next step of creating datasets and data ingestion.
 

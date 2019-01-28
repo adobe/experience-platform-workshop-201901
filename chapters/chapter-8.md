@@ -113,7 +113,7 @@ Data scientists and others may need to do more specific lookups and queries on t
         WHERE personalemail IS NOT NULL
         LIMIT 10;
 
-![](../images/chapter-8/query-email.png)
+    ![](../images/chapter-8/query-email.png)
 
 1.  Notice anything about the result? It produced a flattened object rather than returning a single value. The `personalemail` object contains these six parameters primary, address, label, type, status and statusReason. And when the column is only delcared down to the object it will return the entire object as a string. The XDM schema is more complex than what you may have had experience with before because we need to cover multiple solutions, channels, and use-cases. If you just wanted the ID value you would use:
 
