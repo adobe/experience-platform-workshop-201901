@@ -161,10 +161,16 @@ Data scientists and others may need to do more specific lookups and queries on t
 
 ---
 
+**WRAP-UP OF PQS**
+
+#### Additional Resources
+
+---
+
 ### Navigate
 
-**Previous:** Chapter 7 - [API - Data: Ingesting Data via Batch Ingestion](chapter-7.md)
-
-**Next:** Chapter 9 - [Technical - Streaming: Stream in Data using Launch](chapter-9.md)
+|**Previous:**|**Next:**|
+|---|---|
+|Chapter 7 - [API - Data: Ingesting Data via Batch Ingestion](chapter-7.md)|Chapter 9 - [Technical - Streaming: Stream in Data using Launch](chapter-9.md)|
 
 **Return Home:** [Workbook Index](../README.md)

@@ -56,7 +56,7 @@ Great work! Now we've run through the basics of setting up your customer loyalty
 
 #### Additional Resources
 
-[Unified Profile, Identity & Segment Builder](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation.html)
+[Unified Profile, Identity & Segment Builder Documentation on Adobe I/O](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation.html)
 
 ---
 

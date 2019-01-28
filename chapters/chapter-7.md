@@ -135,14 +135,18 @@ Once customer profile data exists within the platform, integrations with the com
 
     In this case the response is not that useful to us as .parquet files are binary in format so they are difficult to read. However, it should make customers happy to know whatever data they import into data services can be exported as well.
 
+---
+
 Well that was a lot of work to ingest the data. Let's move on to the next step which is segmenting the data and targeting specific users.
+
+#### Additional Resources
 
 ---
 
 ### Navigate
 
-**Previous:** Chapter 6 - [API - Schema: Explore and Define XDM Schema](chapter-6.md)
-
-**Next:** Chapter 8 - [Technical: Querying: Using the Profile Query Service](chapter-8.md)
+|**Previous:**|**Next:**|
+|---|---|
+|Chapter 6 - [API - Schema: Explore and Define XDM Schema](chapter-6.md)|Chapter 8 - [Technical: Querying: Using the Profile Query Service](chapter-8.md)|
 
 **Return Home:** [Workbook Index](../README.md)

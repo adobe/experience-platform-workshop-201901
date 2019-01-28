@@ -247,10 +247,17 @@ The streaming capabilities of data into Experience Platform are not limited to w
 
 ---
 
+
+
+#### Additional Resources
+
+---
+
 ### Navigate
 
-**Previous:** Chapter 8 - [Technical - Querying: Using the Profile Query Service](chapter-8.md)
 
-**Next:** Bonus Chapter 10 - [Technical - Segmentation: Building Segments from Unified Profiles with the API](chapter-10.md)
+|**Previous:**|**Next:**|
+|---|---|
+|Chapter 8 - [Technical - Querying: Using the Profile Query Service](chapter-8.md)|Bonus Chapter 10 - [Technical - Segmentation: Building Segments from Unified Profiles with the API](chapter-10.md)|
 
 **Return Home:** [Workbook Index](../README.md)
