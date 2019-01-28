@@ -20,7 +20,7 @@
 
 ## Story
 
-Once we have our customer loyalty system set up on Experience Platform by defining our schema to use, datasets to ingest data, in ingesting our existing customer data, we now want to make sure that new Profile data (from sign-ups, updates, etc) and behavioral ExperienceEvent data (browsing habits, actionable triggers, etc) are recorded and updated in near real-time. We can do this by utilizing Adobe Experience Platform Launch on our website. For this exercise, we will step into the shoes of the owners of WeTravel, a travel booking website.
+Once we have our customer loyalty system set up on Experience Platform by defining our schema to use, datasets to ingest data, in ingesting our existing customer data, we now want to make sure that new Profile data (from sign-ups, updates, etc) and behavioral ExperienceEvent data (browsing habits, actionable triggers, etc) are recorded and updated in near real-time. We can do this by utilizing Adobe Experience Platform Launch on our website. For this exercise, we will step into the shoes of the owners of WeTravel, a travel booking website, and see how we can bring in behavioral and profile data from website interactions into Experience Platform.
 
 ---
 
@@ -71,7 +71,7 @@ Some elements of Launch are pre-packaged for sake of time. Rules, Data Elements 
 
 1. The last step is to select our new library as the working environment. In the top right drop down for `Working Library`, select our new `web publish` library. This will now update the library whenever we make any changes in the next steps.
 
- ##### Putting Launch into a website
+##### Putting Launch into a website
 
 1. Now, we need to take a snippet of HTML to insert in your WeTravel site. This snippet will be how Launch sends data to the Experience Platform. Click the `Environments` tab from the home screen, and then click the small box icon to the right of the `Development` row.
 
@@ -87,7 +87,7 @@ Some elements of Launch are pre-packaged for sake of time. Rules, Data Elements 
 
    ![](../images/chapter-9/launch-weretail-snippet2.png)
 
- ##### Setting up Launch Rules and Elements
+##### Setting up Launch Rules and Elements
 
 1. Go to the `Data Elements` tab. This is where we will define elements from our WeTravel site to pull in values - names, emails, IDs, descriptors, etc. There are already a few populated in here that we will be using when we send data to Experience Platform. Here, we will create a new Data Element to record the language of our browser.
 
@@ -119,7 +119,7 @@ Some elements of Launch are pre-packaged for sake of time. Rules, Data Elements 
 
 1. Select your streaming endpoint - in the text box, type your [firstinitial / lastname] and your endpoint should pop up. Select it and click `Save to Library and Build`.
 
- ##### Sending Profile Data
+##### Sending Profile Data
 
 1. Now, we have our streaming endpoint from our WeTravel site into Experience Platform defined and ready to go. The next step is to create triggers that will make actions happen on our WeTravel site. Go to the `Rules` tab. Take alook at the existing rules - we have two defined here. Look into `Page Visit`.
 
@@ -154,7 +154,7 @@ Some elements of Launch are pre-packaged for sake of time. Rules, Data Elements 
 
 1. Let's save our changes. Click on `Keep Changes` to save our Action, and then `Save to Library and Build`. Now the rule for "Page View" has been set.
 
- ##### Sending ExperienceEvent Data
+##### Sending ExperienceEvent Data
 
 1. We just set up our first rule to send an ExperienceEvent to Platform! Now let's do the same thing for same with Profile data, by taking a look at the `Sign Up` rule. Clicking on `Core - Click` you can see the composition of the event that we're looking for - a click on the `Submit` button during sign-up.
 
@@ -242,6 +242,8 @@ Now we've got a Launch property setup, and a WeTravel instance running with the 
 ### Launch is set up!
 
 Congratulations! You've got all the basics you need for your Adobe Experience Platform setup to build out not just a basis for customer loyalty programs, but also for data collection, storage, and analysis of your incoming customer data from batch ingestion (Chapters 4 and 7) and streaming data.
+
+The streaming capabilities of data into Experience Platform are not limited to websites - mobiel apps, POS devices, and other points of data capture can all stream behavioral and other types of data into Experience Platform using methods like Launch.
 
 ---
 
