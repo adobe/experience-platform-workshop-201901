@@ -9,7 +9,7 @@
 ## Lab Resources
 
 - Experience Platform UI: [https://platform.adobe.com/](https://platform.adobe.com/)
-- Sample data .parquet file in Profile XDM format: [ProfileDataSample.parquet](data/ProfileDataSample.parquet)
+- Sample data .parquet file in Profile XDM format: [ProfileDataSample.parquet](../data/ProfileDataSample.parquet)
 
 ## Lab Tasks
 
