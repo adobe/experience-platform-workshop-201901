@@ -1,4 +1,4 @@
-# Chapter 9. Technical: Stream in Data via Launch
+# Chapter 9. Streaming: Stream in Data using Launch
 
 ## Learning Objectives
 
@@ -280,6 +280,6 @@ Now we've got a Launch property setup, and a WeTravel instance running with the 
 
 ### Navigate
 
-**Previous:** Chapter 8 - [Technical: Query the Data](chapter-8.md)
+**Previous:** Chapter 8 - [Technical - Querying: Using the Profile Query Service](chapter-8.md)
 
 **Return Home:** [Workbook Index](../README.md)

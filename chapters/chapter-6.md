@@ -1,4 +1,4 @@
-# Chapter 6. API: Define the Schema
+# Chapter 6. Schema: Explore and Define XDM Schema
 
 ## Learning Objectives
 
@@ -56,8 +56,8 @@ With the creation of our custom schema we are ready to move on to the next step 
 
 ### Navigate
 
-**Previous:** Precursor - [API: Login and Accessing with Postman](chapter-6-precursor.md)
+**Previous:** Precursor - [API - Login and Accessing with Postman](chapter-6-precursor.md)
 
-**Next:** Chapter 7 - [API: Ingest the Data](chapter-7.md)
+**Next:** Chapter 7 - [API - Data: Ingesting Data via Batch Ingestion](chapter-7.md)
 
 **Return Home:** [Workbook Index](../README.md)

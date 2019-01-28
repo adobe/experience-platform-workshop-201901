@@ -1,4 +1,4 @@
-# Chapter 8. Technical: Query the Data
+# Chapter 8. Querying: Using the Profile Query Service
 
 ## Learning Objectives
 
@@ -163,8 +163,8 @@ Query Service gives you the ability to use standard SQL to query data in Adobe E
 
 ### Navigate
 
-**Previous:** Chapter 7 - [API: Ingest the Data](chapter-7.md)
+**Previous:** Chapter 7 - [API - Data: Ingesting Data via Batch Ingestion](chapter-7.md)
 
-**Next:** Chapter 9 - [Technical: Stream in Data](chapter-9.md)
+**Next:** Chapter 9 - [Technical - Streaming: Stream in Data using Launch](chapter-9.md)
 
 **Return Home:** [Workbook Index](../README.md)

@@ -1,4 +1,4 @@
-# Chapter 7. API: Ingest the Data
+# Chapter 7. Data: Ingesting Data via Batch Ingestion
 
 ## Learning Objectives
 
@@ -141,8 +141,8 @@ Well that was a lot of work to ingest the data. Let's move on to the next step w
 
 ### Navigate
 
-**Previous:** Chapter 6 - [API: Define the Schema](chapter-6.md)
+**Previous:** Chapter 6 - [API - Schema: Explore and Define XDM Schema](chapter-6.md)
 
-**Next:** Chapter 8 - [Technical: Query the Data](chapter-8.md)
+**Next:** Chapter 8 - [Technical: Querying: Using the Profile Query Service](chapter-8.md)
 
 **Return Home:** [Workbook Index](../README.md)

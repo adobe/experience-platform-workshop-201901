@@ -71,21 +71,21 @@ These will be supplied to you with a handout and are unique to each registered p
 
 ##### UI-Based Lab
 
-- Chapter 3 - [Define the Schema](chapters/chapter-3.md)
-- Chapter 4 - [Ingest the Data](chapters/chapter-4.md)
-- Chapter 5 - [Segment the Data](chapters/chapter-5.md)
+- Chapter 3 - [Schema: Explore and Define XDM Schema](chapters/chapter-3.md)
+- Chapter 4 - [Data: Ingesting Data via Batch Ingestion](chapters/chapter-4.md)
+- Chapter 5 - [Segmentation: Building Segments from Unified Profiles](chapters/chapter-5.md)
 
 ##### API and Technical Lab
 
 - Precursor - [Login and Accessing with Postman](chapters/chapter-6-precursor.md)
-- Chapter 6 - [Explore and Define XDM Schema](chapters/chapter-6.md)
-- Chapter 7 - [Ingesting Data](chapters/chapter-7.md)
-- Chapter 8 - [Query the Data](chapters/chapter-8.md)
-- Chapter 9 - [Stream in Data](chapters/chapter-9.md)
+- Chapter 6 - [Schema: Explore and Define XDM Schema](chapters/chapter-6.md)
+- Chapter 7 - [Data: Ingesting Data via Batch Ingestion](chapters/chapter-7.md)
+- Chapter 8 - [Querying: Using the Profile Query Service](chapters/chapter-8.md)
+- Chapter 9 - [Streaming: Stream in Data using Launch](chapters/chapter-9.md)
 
 ##### Bonus API Content
 
-- Chapter 10 - [Segment the Data](chapters/chapter-10.md)
+- Chapter 10 - [Segmentation: Segment the Data using the API](chapters/chapter-10.md)
 
 #### Administrative (remove before Summit)
 

@@ -1,4 +1,4 @@
-# Chapter 4. Ingest the Data
+# Chapter 4. Data: Ingesting Data via Batch Ingestion
 
 ## Learning Objectives
 
@@ -28,6 +28,8 @@ For batch ingestion of data, it is important that the data is properly formatted
 
 ### Using the Experience Platform Web UI:
 
+#### Creating your datasets
+
 1. Let's jump back to the [Web UI interface](https://platform.adobe.com), and click on the "Data" tab. This is where your ingested datasets will reside; once data has been ingested after this lab, it will look similar to this:
 
    ![](../images/chapter-4/ui-1-dataset_list.png)
@@ -42,7 +44,23 @@ For batch ingestion of data, it is important that the data is properly formatted
 
    ![](../images/chapter-4/ui-2-dataset_creation3.png)
 
-1. Do the same for an "ExperienceEvent" schema-based dataset, naming it "SPP ExperienceEvent - [your first initial + last name]". We will save this for a later chapter.
+1. Do the same for an "ExperienceEvent" schema-based dataset, naming it "SPP ExperienceEvent - [your first initial + last name]". We will save this for a later chapter. You should now have TWO datasets - one for Profile, and one for ExperienceEvent.
+
+#### Enabling your datasets for Unified Profile
+
+1. We also need to make sure that we enable this dataset for Unified Profile. By default, this needs to be enabled by the user for each dataset. Any datasets tagged for Unified Profile will ingest data for Unified Profile consumption as well, enabling profile-stitchign across datasets and giving a full 360-degree view of a specific profile.
+
+1. Go to the "Unified Profile" tab and select "Manage" to manage which datasets are included in Unified Profile.
+
+   ![](../images/chapter-4/ui-4-unifiedprofile-1.png)
+
+1. Find your Profile and ExperienceEvent datasets in the left list, select them, and then click "Enable", and confirm. Now your datasets will send their data into the Unified Profile service as well as Experience Platform.
+
+   ![](../images/chapter-4/ui-4-unifiedprofile-2.png)
+
+   ![](../images/chapter-4/ui-4-unifiedprofile-3.png)
+
+#### Ingesting data into your Profile dataset
 
 1. Click on your newly created "SPP Profile" dataset. Select "Browse" under "Add Data" on the right and navigate to the data file we've provided, ProfileDataSample.parquet.
 
@@ -55,18 +73,8 @@ For batch ingestion of data, it is important that the data is properly formatted
 1. Let's take a look at it to make sure our data is in there. Click the "Preview" button to get a quick top-level view of a small sample of the dataset.
 
    ![](../images/chapter-4/ui-3-dataset_preview.png)
-
-1. We also need to make sure that we enable this dataset for Unified Profile. By default, this needs to be enabled by the user for each dataset. Any datasets tagged for Unified Profile will ingest data for Unified Profile consumption as well, enabling profile-stitchign across datasets and giving a full 360-degree view of a specific profile.
-
-1. go to the "Unified Profile" tab and select "Manage" to manage which datasets are included in Unified Profile.
-
-   ![](../images/chapter-4/ui-4-unifiedprofile-1.png)
-
-1. Find your Profile and ExperienceEvent datasets in the left list, select them, and then click "Enable", and confirm. Now your datasets will send their data into the Unified Profile service as well as Experience Platform.
-
-   ![](../images/chapter-4/ui-4-unifiedprofile-2.png)
-
-   ![](../images/chapter-4/ui-4-unifiedprofile-3.png)
+   
+#### Adding data governance to your dataset   
 
 1. [NOT WORKING IN OLD UI] Alright, now that our customer loyalty data has been ingested, we want to make sure that this dataset is properly governed for usage and export control. Click on the "Data Governance" tabe and observe that we can set three types of restrictions: Contractual, Identity, and Sensitive Data.
 
@@ -86,8 +94,8 @@ For batch ingestion of data, it is important that the data is properly formatted
 
 ### Navigate
 
-**Previous:** Chapter 3 - [UI: Define the Schema](chapter-3.md)
+**Previous:** Chapter 3 - [UI - Schema: Explore and Define XDM Schema](chapter-3.md)
 
-**Next:** Chapter 5 - [UI: Segment the Data](chapter-5.md)
+**Next:** Chapter 5 - [UI - Segmentation: Building Segments from Unified Profiles](chapter-5.md)
 
 **Return Home:** [Workbook Index](../README.md)
