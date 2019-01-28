@@ -57,4 +57,7 @@ Adobe Campaign is one use-case for Adobe Experience Cloud products living on Exp
 ### Navigate
 
 **Previous:** Chapter 1 - [Setup: Before you start: Pre-Authorization](chapter-1.md)
+
 **Next:** Chapter 3 - [UI: Define the Schema](chapter-3.md)
+
+**Return Home:** [Workbook Index](../README.md)

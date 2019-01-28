@@ -102,3 +102,5 @@ Mac users will be able to use the default version of **OpenSSL** included with M
 ### Navigate
 
 **Next:** Chapter 2 - [XDM and Experience Platform Overview](chapter-2.md)
+
+**Return Home:** [Workbook Index](../README.md)

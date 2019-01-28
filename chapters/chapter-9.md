@@ -7,7 +7,7 @@
 
 ## Lab Resources
 
-- Launch URL:
+- Launch URL: https://launch-demo.adobe.com
 
 ## Lab Tasks
 
@@ -200,7 +200,7 @@ Some elements of Launch are pre-packaged for sake of time.
 
 1. Let's save our changes. Click on "Keep Changes" to save our Action, and then "Save to Library and Build"
 
-1. [NEEDS TO ADD IMAGE] We just set up our first rule to send an ExperienceEvent to Platform! Now let's do the same thing for same with Profile data, by taking a look at the "Sign Up" rule. Clicking on "Core - Click" you can see the composition of the event that we're looking for - a click on the "Submit" button during sign-up.
+1. We just set up our first rule to send an ExperienceEvent to Platform! Now let's do the same thing for same with Profile data, by taking a look at the "Sign Up" rule. Clicking on "Core - Click" you can see the composition of the event that we're looking for - a click on the "Submit" button during sign-up.
 
     ![](../images/chapter-9/launch-setup-21a.png)
 
@@ -211,14 +211,20 @@ Some elements of Launch are pre-packaged for sake of time.
     ![](../images/chapter-9/launch-setup-21.png)
 
 1. Explore the actions for this rule, as there are several already pre-populated. You'll notice that we are sending the following variables:
+   1. personalEmail.address
+   1. \_repo.createDate
    1. person.name.firstName
    1. person.name.lastName
-   1. personalEmail.address
    1. identities[0].id
    1. identities[0].id.namespace.code
-   1. \_repo.createDate
+   1. identities[0].id.primary
+   1. identities[0].id
+   1. identities[0].id.namespace.code
+   1. preferredLanguage
+   1. mobilePhone.number
 
-   You'll also see that the "personalEmail.address" value is "%%" and needs to be corrected. Clear this text box and then select the "Email Address" data element using the round stack icon next to the text box.
+
+   You'll also see that the "identities[1].id" value is "DELETE" and needs to be corrected. This value sets one of the identities that Unified Profile uses to match XDM data to each other. Clear this text box and then select the "Email Address" data element using the round stack icon next to the text box.
 
     ![](../images/chapter-9/launch-setup-22.png)
 
@@ -232,34 +238,48 @@ Some elements of Launch are pre-packaged for sake of time.
 
 Now we've got a Launch property setup, and a WeTravel instance running with the Launch streaming endpoint included. Let's watch it stream data into Experience Platform.
 
-1. Go to your SPA, open inspector, to network tab
-1. refresh the page
+1. Go to https://www.we-travel.com. This should be pointing to your Fenix webserver instance of We-Travel. Right click and open up "Inspect" to see the page inspector.
 
     ![](../images/chapter-9/launch-wetravel-homepage.png)
 
-1. filter by "dcs" until you find your endpoint
+1. Go to the "Network" tab, and type "dcs" into the filter box. This will filter our network commands being sent to the Launch streaming URL. Refresh the page.
+
+1. Select the endpoint under "Name" and scroll dwon on the right pane to "Request Payload". You should see an expandable JSON payload starting with `{header: `. Expand all these fields and you will be able to see the XDM data that we defined in our Launch rule for "Page View" being sent from the page to Launch.
 
     ![](../images/chapter-9/launch-wetravel-eebeacon-homepage.png)
 
-1. look at payload, expand the fields. observe all the becaon data from Page View
-1. sign up. click sign-up, look at payload. observe your profile data being sent
+1. Go back to your WeTravel screen. Now let's see our Sign-Up rule in action by going to "Login" in the top right of the page. Scroll down to the sign-up form and fill in some dummy details with your name and email. These do not have to be real or accurate.
 
     ![](../images/chapter-9/launch-wetravel-signup.png)
 
+1. Click "Sign In". You will see an "Aw snap!" error, but please ignore this; our instance of WeTravel is stripped-down and does not contain any functionality past this page. Go back to your inspector and you can now observe two Launch beacons being sent!
+
+1. One beacon data contains the Profile XDM data we filled into the form. You can see all the fields we defined in the "Sign Up" rule on Launch here.
+
     ![](../images/chapter-9/launch-wetravel-profilebeacon.png)
 
-    ![](../images/chapter-9/launch-wetravel-eebeacon.png)
+1. The other beacon is an ExperienceEvent XDM fired by the "Page View" rule, the same as when we were at the WeTravel Homepage. You'll notice the data for this page is basically identical, except for the `webPageDetails` and `timestamp` fields.
 
-1. copy your ECID
+    ![](../images/chapter-9/launch-wetravel-eebeacon-signup.png)
+    
+1. We can also look at all of our ExperienceEvent data within Experience Platform using an API call through Postman. Within the beacon data, find the `mcid: {id: "##"` field and select your ECID. This ID is specific to your browser session and can be used to look up ExperienceEvent and Unified Profile data.
 
     ![](../images/chapter-9/launch-wetravel-ecid.png)
 
-1. do Profile API lookup on Postman using email
-1. do ExperienceEvent API lookup on Postman using ECID
-1. go to monitoring tab, check unified profile ingestion
+1. Go to Postman, and under the Chapter 9 collection find the `experienceevent point lookup` call. find the `entityId` Field and paste your copied ECID here from the clipboard. Make sure that the `entityIdNS` field is set to "ecid". Send the `GET` call.
+
+ 	![](../images/chapter-9/launch-ecid-lookup-1.png)
+
+1. You should get back a list of all ExperienceEvents associated with your ECID - browsing the homepage and the signup page. Take a look, your streaming data is now in Experience Platform!
+
+ 	![](../images/chapter-9/launch-ecid-lookup-2.png)
+
+1. This data is now in Experience Platform, but it go to monitoring tab, check unified profile ingestion
 
 ---
 
 ### Navigate
 
 **Previous:** Chapter 8 - [Technical: Query the Data](chapter-8.md)
+
+**Return Home:** [Workbook Index](../README.md)

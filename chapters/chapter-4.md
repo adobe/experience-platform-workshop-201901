@@ -56,6 +56,18 @@ For batch ingestion of data, it is important that the data is properly formatted
 
    ![](../images/chapter-4/ui-3-dataset_preview.png)
 
+1. We also need to make sure that we enable this dataset for Unified Profile. By default, this needs to be enabled by the user for each dataset. Any datasets tagged for Unified Profile will ingest data for Unified Profile consumption as well, enabling profile-stitchign across datasets and giving a full 360-degree view of a specific profile.
+
+1. go to the "Unified Profile" tab and select "Manage" to manage which datasets are included in Unified Profile.
+
+   ![](../images/chapter-4/ui-4-unifiedprofile-1.png)
+
+1. Find your Profile and ExperienceEvent datasets in the left list, select them, and then click "Enable", and confirm. Now your datasets will send their data into the Unified Profile service as well as Experience Platform.
+
+   ![](../images/chapter-4/ui-4-unifiedprofile-2.png)
+
+   ![](../images/chapter-4/ui-4-unifiedprofile-3.png)
+
 1. [NOT WORKING IN OLD UI] Alright, now that our customer loyalty data has been ingested, we want to make sure that this dataset is properly governed for usage and export control. Click on the "Data Governance" tabe and observe that we can set three types of restrictions: Contractual, Identity, and Sensitive Data.
 
    ![](../images/chapter-4/ui-5-data_governance.png)
@@ -75,4 +87,7 @@ For batch ingestion of data, it is important that the data is properly formatted
 ### Navigate
 
 **Previous:** Chapter 3 - [UI: Define the Schema](chapter-3.md)
+
 **Next:** Chapter 5 - [UI: Segment the Data](chapter-5.md)
+
+**Return Home:** [Workbook Index](../README.md)

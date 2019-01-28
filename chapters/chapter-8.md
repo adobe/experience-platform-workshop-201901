@@ -164,4 +164,7 @@ Query Service gives you the ability to use standard SQL to query data in Adobe E
 ### Navigate
 
 **Previous:** Chapter 7 - [API: Ingest the Data](chapter-7.md)
+
 **Next:** Chapter 9 - [Technical: Stream in Data](chapter-9.md)
+
+**Return Home:** [Workbook Index](../README.md)

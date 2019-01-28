@@ -56,4 +56,7 @@ Building a customer loyalty program requires a foundation. Here, we will define 
 ### Navigate
 
 **Previous:** Chapter 2 - [Setup: XDM and Experience Platform Overview](chapter-2.md)
+
 **Next:** Chapter 4 - [UI: Ingest the Data](chapter-4.md)
+
+**Return Home:** [Workbook Index](../README.md)

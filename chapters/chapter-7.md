@@ -142,4 +142,7 @@ Well that was a lot of work to ingest the data. Let's move on to the next step w
 ### Navigate
 
 **Previous:** Chapter 6 - [API: Define the Schema](chapter-6.md)
+
 **Next:** Chapter 8 - [Technical: Query the Data](chapter-8.md)
+
+**Return Home:** [Workbook Index](../README.md)

@@ -57,4 +57,7 @@ With the creation of our custom schema we are ready to move on to the next step 
 ### Navigate
 
 **Previous:** Precursor - [API: Login and Accessing with Postman](chapter-6-precursor.md)
+
 **Next:** Chapter 7 - [API: Ingest the Data](chapter-7.md)
+
+**Return Home:** [Workbook Index](../README.md)

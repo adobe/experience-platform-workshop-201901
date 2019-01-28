@@ -1,6 +1,6 @@
 # Adobe Experience Platform SPP Workshop
 
-- Date: January 30th, 2019
+- Date: January 29th-30th, 2019
 - Participants: Adobe Partners
 - Instructors: Klaasjan Tukker (ktukker@adobe.com), Simon Mac Donald (smacdona@adobe.com), Ryan Dumlao (dumlao@adobe.com), Sarah Xu (saxu@adobe.com)
 
@@ -16,6 +16,16 @@ This workshop is intended to cover the following topics in both UI and API setti
 - Dataset visualization in Experience Platform UI
 - Unified Profile, Segment Builder
 - Adobe Launch and streaming data in to Platform
+
+### Schedule
+
+|Day|Time Block|Scheduled Event|
+|---|----------|-----|
+|Day 1 (1/29)|4:00 PM - 5:00 PM|Technical setup and preparation (provisioning, access, software tools)|
+|Day 2 (1/30)|10:00 AM - 10:15 AM|Tech Keynote - Jim Rivera|
+||10:15 AM - 12:30 PM|Morning hands-on lab, Experience Platform UI|
+||12:30 PM - 1:30 PM|Networking Lunch & Break|
+||1:30 PM - 5:00 PM|Afternoon hands-on technical lab, Experience Platform APIs|
 
 ### Story
 
@@ -68,10 +78,14 @@ These will be supplied to you with a handout and are unique to each registered p
 ##### API and Technical Lab
 
 - Precursor - [Login and Accessing with Postman](chapters/chapter-6-precursor.md)
-- Chapter 6 - [Define the Schema](chapters/chapter-6.md)
-- Chapter 7 - [Ingest the Data](chapters/chapter-7.md)
+- Chapter 6 - [Explore and Define XDM Schema](chapters/chapter-6.md)
+- Chapter 7 - [Ingesting Data](chapters/chapter-7.md)
 - Chapter 8 - [Query the Data](chapters/chapter-8.md)
 - Chapter 9 - [Stream in Data](chapters/chapter-9.md)
+
+##### Bonus API Content
+
+- Chapter 10 - [Segment the Data](chapters/chapter-10.md)
 
 #### Administrative (remove before Summit)
 
