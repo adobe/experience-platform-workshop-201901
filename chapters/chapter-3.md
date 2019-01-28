@@ -2,22 +2,23 @@
 
 ## Learning Objectives
 
-- Learn what the Unified Profile Service is and how to use it
-- Learn how to segment an audience of Profiles
+- Understand the structure of XDM Schema
+- Learn to list, lookup, create, and extend schema in API
 
 ## Lab Resources
 
-- Video Demo: **Demonstration of Segment Builder** by Aaron Shields, Senior Product Manager, Experience Cloud
+- Profile XDM in JSON format: [ProfileXDM.json](data/profileXDM.json)
 
 ## Lab Tasks
 
-- Define a segment via API in JSON
-- Create a segment job and export it to a new dataset
-- Define a segment using the Segment Builder within Platform UI
+- List all the schemas
+- Lookup the Profile schema
+- Extend a schema
+- Create a custom schema
 
 ## Story
 
-Building a customer loyalty program requires a foundation. Here, we will define a "basis profile", which will be a standard Profile XDM schema that will serve as the basis for each customer's profile, and thus the Universal Profile that will be used across Experience Platform. The basis profile can be hydrated by ingesting existing profile data (for example, from an existing customer database formatted in XDM) or through point-to-point connections from Adobe products such as Launch (covered in Chapter 9) - we can see the frame for this profile in the Experience Platform UI in this step.
+Building a customer loyalty program requires a foundation. Here, we will define a "basis profile", which will be a standard Profile XDM schema that will serve as the basis for each customer's profile, and thus the Universal Profile that would be used across Experience Platform. The basis profile can be hydrated by ingesting existing profile data (for example, from an existing customer database) or through point-to-point connections from Adobe products such as Launch - we can see the frame for this profile in the Experience Platform UI in this step.
 
 ---
 

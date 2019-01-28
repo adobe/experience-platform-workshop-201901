@@ -18,7 +18,7 @@
 
 ## Story
 
-Building a customer loyalty program requires a foundation. Here, we will define a "basis profile", which will be a standard Profile XDM schema that will serve as the basis for each customer's profile, and thus the Universal Profile that would be used across Experience Platform. The basis profile can be hydrated by ingesting existing profile data (for example, from an existing customer database) or through point-to-point connections from Adobe products such as Launch - we can see the frame for this profile in the Experience Platform UI in this step.
+While we were able to visually view schema, extend and create custom schema, those tools may not be as optimal for creating large custom schema or viewing schema structure in a more compact format. Perhaps you are more at home with APIs and Postman. In this case, the same suite of abilities (and more) are available to you within the API - if we want to define a new, custom schema, it is likely easier to do so with a JSON representation that we can submit as a POST call rather than defining each field in the UI as we saw in Chapter 4.
 
 ---
 

@@ -15,7 +15,7 @@
 
 ---
 
-## Story Part 2: Using the APIs
+## Story:
 
 While using the UI for visualization and other tools are useful for Analysts/Architects, users like the Data Engineer ("Joe") and App Developer ("Adam") are likely to also utilize the Adobe Experience Cloud APIs to ingest data. This includes not just batch data of files, but also point-to-point connectors that could be transferring or streaming data from the sign-up forms for loyalty program, sign-in details from the login screen, as well as transactions from logged-in users using the company's website. We will implement these different data ingestion and lookup functions using the API, and demonstrate the tools available for integration of Experience Platform. When developing integrations and connections to Experience Platform from the Company's touch points for their customer loyalty program (sign-up forms, information changes, transaction history, web interactions), utilizing the APIs will facilitate an automatic method to establish new basis profiles, or to bring additional customer data into their basis profile.
 
