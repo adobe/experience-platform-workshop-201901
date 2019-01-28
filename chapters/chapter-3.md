@@ -7,7 +7,7 @@
 
 ## Lab Resources
 
-- Profile XDM in JSON format: [ProfileXDM.json](data/profileXDM.json)
+- Profile XDM in JSON format: [ProfileXDM.json](../data/profileXDM.json)
 
 ## Lab Tasks
 
