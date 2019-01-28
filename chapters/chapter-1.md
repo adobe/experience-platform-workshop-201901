@@ -21,6 +21,7 @@
   - Add Users
   - Add as Admin
 - Verify Access to Adobe I/O Console
+- Install the Fenix Web Server with WeTravel
 
 ---
 
@@ -30,6 +31,7 @@ Download the resources listed below and make sure they are accessible on your lo
 
 - [Postman](https://www.getpostman.com/apps)
 - [Fenix Web Server](http://fenixwebserver.com/)
+  - [WeTravel website files](../data/WeTravel-local.zip)
 - PostgreSQL [MacOS](https://www.postgresql.org/download/macosx/) use the Homebrew method or [Windows](https://www.postgresql.org/download/windows/)
 - A text editor like [VS Code](https://code.visualstudio.com/download)
 

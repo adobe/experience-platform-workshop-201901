@@ -54,13 +54,20 @@ Building a customer loyalty program requires a foundation. Here, we will define 
 
 	![](../images/chapter-3/ui-6-defineschema.png)
 
+---
+
+Great! Now we understand the structure of XDM Schema and the ability we have to extend and create schema witin our Platform UI. Let's move on to the next step - creating datasets and ingesting data in [Chapter 4](chapter-4.md).
+
+#### Additional Resources
+
+[XDM and Schema Documentation on Adobe I/O](https://www.adobe.io/apis/experienceplatform/home/xdm.html)
 
 ---
 
 ### Navigate
 
-**Previous:** Chapter 2 - [Setup: XDM and Experience Platform Overview](chapter-2.md)
-
-**Next:** Chapter 4 - [UI: Data: Ingesting Data via Batch Ingestion](chapter-4.md)
+|**Previous:**|**Next:**|
+|---|---|
+|Chapter 2 - [Setup: XDM and Experience Platform Overview](chapter-2.md)|Chapter 4 - [UI: Data: Ingesting Data via Batch Ingestion](chapter-4.md)|
 
 **Return Home:** [Workbook Index](../README.md)

@@ -192,8 +192,8 @@ Whew! We are finally ready to start calling the Adobe Experience Platform API's 
 
 ### Navigate
 
-**Previous:** Chapter 5 - [UI - Segmentation: Building Segments from Unified Profiles](chapter-5.md)
-
-**Next:** Chapter 6 - [API - Schema: Explore and Define XDM Schema](chapter-6.md)
+|**Previous:**|**Next:**|
+|---|---|
+|Chapter 5 - [UI - Segmentation: Building Segments from Unified Profiles](chapter-5.md)|Chapter 6 - [API - Schema: Explore and Define XDM Schema](chapter-6.md)|
 
 **Return Home:** [Workbook Index](../README.md)

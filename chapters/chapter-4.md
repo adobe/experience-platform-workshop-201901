@@ -88,14 +88,20 @@ For batch ingestion of data, it is important that the data is properly formatted
 
    ![](../images/chapter-4/ui-7-data_governance_set.png)
 
-1. Now that we've ingested our profile data into the Unified Profile, we can segment our users using Experience Platform's Segment Builder in Chapter 5. Let's move on.
+---
+
+Now that we've created our datasets and ingested our profile data into the Unified Profile through batch ingestion of an existinf file, we can segment our profiles using Experience Platform's Segment Builder in [Chapter 5](chapter-5.md). Let's move on.
+
+#### Additional Resources
+
+[Data Ingestion Documentation on Adobe I/O](https://www.adobe.io/apis/experienceplatform/home/data-ingestion.html)
 
 ---
 
 ### Navigate
 
-**Previous:** Chapter 3 - [UI - Schema: Explore and Define XDM Schema](chapter-3.md)
-
-**Next:** Chapter 5 - [UI - Segmentation: Building Segments from Unified Profiles](chapter-5.md)
+|**Previous:**|**Next:**|
+|---|---|
+|Chapter 3 - [UI - Schema: Explore and Define XDM Schema](chapter-3.md)|Chapter 5 - [UI - Segmentation: Building Segments from Unified Profiles](chapter-5.md)|
 
 **Return Home:** [Workbook Index](../README.md)

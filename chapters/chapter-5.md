@@ -50,11 +50,18 @@ Let's show how we can visually build a segment - a great tool to look at your Pr
 
    ![](../images/chapter-5/ui-6-segment_created.png)
 
+---
+
 Great work! Now we've run through the basics of setting up your customer loyalty system based on Profile data - defining our data schema, ingesting data for that schema into Unified Profile, and segmenting our Unified Profile entries based on the segments you're targeting. What else can we do with this data now, and how else can we use or integrate into Adobe Experience Platform? We'll cover that next.
+
+#### Additional Resources
+
+[Unified Profile, Identity & Segment Builder](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation.html)
 
 ---
 
 ### Navigate
 
-**Previous:** Chapter 4 - [UI -  Data: Ingesting Data via Batch Ingestion](chapter-4.md)
-**Next:** (API AND TECHNICAL LAB) Precursor - [Login and Accessing with Postman](chapter-6-precursor.md)
+|**Previous:**|**Next:**|
+|---|---|
+|Chapter 4 - [UI -  Data: Ingesting Data via Batch Ingestion](chapter-4.md)|(API AND TECHNICAL LAB) Precursor - [Login and Accessing with Postman](chapter-6-precursor.md)|

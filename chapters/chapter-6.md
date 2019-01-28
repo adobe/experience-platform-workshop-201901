@@ -50,14 +50,21 @@ While we were able to visually view schema, extend and create custom schema, tho
 
    The response section should return the details of the schema which look an awful lot like `Profile` schema. We've included a sample [ProfileXDM.json](../data/profileXDM.json) file in the repository if you'd like to compare them side by side.
 
+
+---
+
 With the creation of our custom schema we are ready to move on to the next step of creating datasets and data ingestion.
+
+#### Additional Resources
+
+
 
 ---
 
 ### Navigate
 
-**Previous:** Precursor - [API - Login and Accessing with Postman](chapter-6-precursor.md)
-
-**Next:** Chapter 7 - [API - Data: Ingesting Data via Batch Ingestion](chapter-7.md)
+|**Previous:**|**Next:**|
+|---|---|
+|Precursor - [API - Login and Accessing with Postman](chapter-6-precursor.md)|Chapter 7 - [API - Data: Ingesting Data via Batch Ingestion](chapter-7.md)|
 
 **Return Home:** [Workbook Index](../README.md)
