@@ -19,16 +19,16 @@ This workshop is intended to cover the following topics in both UI and API setti
 
 ### Schedule
 
-|Day 1 (1/29)|Time Block|Scheduled Event|
-|---|----------|-----|
-||4:00 PM - 5:00 PM|Technical setup and preparation (provisioning, access, software tools)|
+| Day 1 (1/29) | Time Block        | Scheduled Event                                                        |
+| ------------ | ----------------- | ---------------------------------------------------------------------- |
+|              | 4:00 PM - 5:00 PM | Technical setup and preparation (provisioning, access, software tools) |
 
-|Day 2 (1/30)|Time Block|Scheduled Event|
-|---|----------|-----|
-||10:00 AM - 10:15 AM|Tech Keynote - Jim Rivera|
-||10:15 AM - 12:30 PM|Morning hands-on lab, Experience Platform UI|
-||12:30 PM - 1:30 PM|Networking Lunch & Break|
-||1:30 PM - 5:00 PM|Afternoon hands-on technical lab, Experience Platform APIs|
+| Day 2 (1/30) | Time Block          | Scheduled Event                            |
+| ------------ | ------------------- | ------------------------------------------ |
+|              | 10:00 AM - 10:15 AM | Tech Keynote - Jim Rivera                  |
+|              | 10:15 AM - 12:30 PM | Morning hands-on lab, Part One             |
+|              | 12:30 PM - 1:30 PM  | Networking Lunch & Break                   |
+|              | 1:30 PM - 5:00 PM   | Afternoon hands-on technical lab, Part Two |
 
 ### Story
 
