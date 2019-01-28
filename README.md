@@ -59,8 +59,8 @@ These will be supplied to you with a handout and are unique to each registered p
 
 #### Resources to download
 
-- [Experience Platform API Postman Collection](postman/PlatformSupport.postman_collection.json)
-- [Experience Platform API Postman Environment](postman/PlatformSupport.postman_environment.json)
+- [Experience Platform API Postman Collection](postman/PlatformSummit.postman_collection.json)
+- [Experience Platform API Postman Environment](postman/PlatformSummit.postman_environment.json)
 - Sample Profile XDM Data
   - [ProfileData.parquet](data/ProfileDataSample.parquet)
 - [WeTravel Website](data/WeTravel-local.zip)

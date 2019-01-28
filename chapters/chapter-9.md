@@ -38,19 +38,42 @@ Some elements of Launch are pre-packaged for sake of time. Rules, Data Elements 
 
 #### Creating a Launch property, data elements, and rules
 
-1. We will be re-using the datasets we created with the UI in Chapter 3, which are `SPP Profile - [first initial, last name]` and `SPP ExperienceEvent - [first initial, last name]`.
+1. We will be re-using the datasets we created with the UI in Chapter 3, which are `SPP Profile - [first initial, last name]` and `SPP ExperienceEvent - [first initial, last name]`; an example of these datasets in the Platform UI is below:
 
    ![](../images/chapter-9/launch-setup-4.png)
 
+##### Setting up a Launch Property
+
 1. Open Adobe Experience Platform Launch at https://launch-demo.adobe.com
-1. Login with yout Adobe ID, and ensure in the top right Organization selector that you are in `Experience Platform SPP Partners 1`
+1. Login with your Adobe ID, and ensure in the top right Organization selector that you are in `Experience Platform SPP Partners 1`
+
 1. Find the property associated with your user number (`SPP Property - ##`) and open it. This property points to the URL "we-travel.com", which is now set up on your local machine from the previous steps in this chapter. The property will open up and take you to the Launch property home screen.
 
    ![](../images/chapter-9/launch-setup-5.png)
 
    ![](../images/chapter-9/launch-setup-6.png)
 
-1. First, we need to take a snippet of HTML to insert in your WeTravel site. This snippet will be how Launch sends data to the Experience Platform. Click the `Environments` tab from the home screen, and then click the small box icon to the right of the `Development` row.
+1. First, we need to set up a Launch library in the development environment. Go to the `Publishing` tab and click `Add New Library`.
+
+   ![](../images/chapter-9/launch-setup-publish-1.png)
+
+1. Next, name your library `web publish` and select `Development` as the environment.
+
+   ![](../images/chapter-9/launch-setup-publish-2.png)  
+
+   ![](../images/chapter-9/launch-setup-publish-3.png)
+
+1. Launch requires us to select which elements in our Property that it should publish. This property already has several Data Elements and Rules set (we'll learn about this in a bit), so we need to click `Add All Changed Resources` at the bottom of the page to add every existing element to this library. Then, click `Save & Build for Development`.
+
+   ![](../images/chapter-9/launch-setup-publish-4.png)
+
+   ![](../images/chapter-9/launch-setup-publish-5.png)
+
+1. The last step is to select our new library as the working environment. In the top right drop down for `Working Library`, select our new `web publish` library. This will now update the library whenever we make any changes in the next steps.
+
+ ##### Putting Launch into a website
+
+1. Now, we need to take a snippet of HTML to insert in your WeTravel site. This snippet will be how Launch sends data to the Experience Platform. Click the `Environments` tab from the home screen, and then click the small box icon to the right of the `Development` row.
 
    ![](../images/chapter-9/launch-setup-7.png)
 
@@ -63,6 +86,8 @@ Some elements of Launch are pre-packaged for sake of time. Rules, Data Elements 
    ![](../images/chapter-9/launch-weretail-snippet1.png)
 
    ![](../images/chapter-9/launch-weretail-snippet2.png)
+
+ ##### Setting up Launch Rules and Elements
 
 1. Go to the `Data Elements` tab. This is where we will define elements from our WeTravel site to pull in values - names, emails, IDs, descriptors, etc. There are already a few populated in here that we will be using when we send data to Experience Platform. Here, we will create a new Data Element to record the language of our browser.
 
@@ -92,6 +117,10 @@ Some elements of Launch are pre-packaged for sake of time. Rules, Data Elements 
 
    ![](../images/chapter-9/launch-setup-13.png)
 
+1. Select your streaming endpoint - in the text box, type your [firstinitial / lastname] and your endpoint should pop up. Select it and click `Save to Library and Build`.
+
+ ##### Sending Profile Data
+
 1. Now, we have our streaming endpoint from our WeTravel site into Experience Platform defined and ready to go. The next step is to create triggers that will make actions happen on our WeTravel site. Go to the `Rules` tab. Take alook at the existing rules - we have two defined here. Look into `Page Visit`.
 
    ![](../images/chapter-9/launch-setup-14.png)
@@ -117,11 +146,15 @@ Some elements of Launch are pre-packaged for sake of time. Rules, Data Elements 
    1. variable: `environment.browserDetails.acceptLanguage`
    1. value: `%Language%` - _(Select this from the list of data elements by clicking the round stack icon next to the value field. It can also be typed in directly)_
 
-   ![](../images/chapter-9/launch-setup-19.png)
+   ![](../images/chapter-9/launch-setup-19a.png)
 
    ![](../images/chapter-9/launch-setup-18.png)
 
-1. Let's save our changes. Click on `Keep Changes` to save our Action, and then `Save to Library and Build`
+   ![](../images/chapter-9/launch-setup-19b.png)
+
+1. Let's save our changes. Click on `Keep Changes` to save our Action, and then `Save to Library and Build`. Now the rule for "Page View" has been set.
+
+ ##### Sending ExperienceEvent Data
 
 1. We just set up our first rule to send an ExperienceEvent to Platform! Now let's do the same thing for same with Profile data, by taking a look at the `Sign Up` rule. Clicking on `Core - Click` you can see the composition of the event that we're looking for - a click on the `Submit` button during sign-up.
 
@@ -196,7 +229,19 @@ Now we've got a Launch property setup, and a WeTravel instance running with the 
 
    ![](../images/chapter-9/launch-ecid-lookup-2.png)
 
-1. This data is now in Experience Platform, but it go to monitoring tab, check unified profile ingestion
+1. This data is now in Experience Platform! In addition, it's now been ingested into the Unified Profile Service, since we tagged it for Unified Profile when creating our dataset back in Chapter 4. To confirm this in the API since we're still in Postman, you can take the ECID that you used in the last step and do a similar call with the `GET` call for `profile point lookup`. You will then be able to see your full Unified Profile associated with your ECID - your sign-up data for Profile data should now be available as a profile view.
+
+ _NOTE: It may take up to 5 minutes for the Unified Profile data to refresh and show your profile data_
+ 
+   ![](../images/chapter-9/launch-unifiedprofile-1.png)
+   
+1. You can also see the status of your streaming data coming in, and being ingested into Unified Profile, by going to the `Monitoring` tab under `Unified Profile` in the Platform UI. Here you will see ALL Unified Profile-tagged datasets, so it's likely harder to find your dataset in the list here.
+
+   ![](../images/chapter-9/launch-unifiedprofile-2.png)
+
+### Launch is set up!
+
+Congratulations! You've got all the basics you need for your Adobe Experience Platform setup to build out not just a basis for customer loyalty programs, but also for data collection, storage, and analysis of your incoming customer data from batch ingestion (Chapters 4 and 7) and streaming data.
 
 ---
 
