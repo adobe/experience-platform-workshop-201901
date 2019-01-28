@@ -19,10 +19,13 @@ This workshop is intended to cover the following topics in both UI and API setti
 
 ### Schedule
 
-|Day|Time Block|Scheduled Event|
+|Day 1 (1/29)|Time Block|Scheduled Event|
 |---|----------|-----|
-|Day 1 (1/29)|4:00 PM - 5:00 PM|Technical setup and preparation (provisioning, access, software tools)|
-|Day 2 (1/30)|10:00 AM - 10:15 AM|Tech Keynote - Jim Rivera|
+||4:00 PM - 5:00 PM|Technical setup and preparation (provisioning, access, software tools)|
+
+|Day 2 (1/30)|Time Block|Scheduled Event|
+|---|----------|-----|
+||10:00 AM - 10:15 AM|Tech Keynote - Jim Rivera|
 ||10:15 AM - 12:30 PM|Morning hands-on lab, Experience Platform UI|
 ||12:30 PM - 1:30 PM|Networking Lunch & Break|
 ||1:30 PM - 5:00 PM|Afternoon hands-on technical lab, Experience Platform APIs|
@@ -31,13 +34,13 @@ This workshop is intended to cover the following topics in both UI and API setti
 
 A company running a business in Retail or Hospitality can use Adobe Experience Cloud products for a variety of reasons. One of those use cases applicable to these verticals is that of a customer loyalty program. This would include creating a "basis profile" for a specific company's customer, using identifiable information including full name, contact information, and other details. This profile would then serve as a base point to tie additional unique data including transaction history, loyalty program eligibility and status, as well as behavioral data such as online browsing habits to drive promotions and other actions.
 
-Having this "basis profile" established in the Adobe Experience Platform, using a Unified Profile, will give the company the ability to tie multiple sources of data from Experience Cloud products as well as external products built with connections into the Adobe Experience Platform. This will help the company understand a full 360-degree view of each of their customers.
+Having this "basis profile" established in the Adobe Experience Platform, using a Unified Profile, will give the company the ability to tie multiple sources of data from Experience Cloud products as well as external products built with connections into the Adobe Experience Platform. This will help the company understand a full 360-degree view of each of their customers, as well as perform useful actions such as segmenting customers, querying the data, and defining live data to include.
 
-The scope of this Adobe I/O workshop covers a portion of this story, that of establishing a basis profile for a company's customers, either through batch ingestion or connector ingestion, in order to begin the foundation for a customer loyalty program built on Adobe Experience Platform.
+This workshop covers a portion of this story, that of establishing a basis profile for a company's customers, either through batch ingestion or connector ingestion, in order to begin the foundation for a customer loyalty program built on Adobe Experience Platform. It will then cover building in live data streaming from a website into Experience Platform via Launch.
 
 ### Scope
 
-We will cover Profile XDM data ingestion, lookup and segmenting in the frame of a customer loyalty program, as well as setting up streaming data from Adobe Launch.
+We will cover using the Experience Platform UI to perform XDM data ingestion and segmentation. The 2nd part oft he workshop will cover the same use-cases using the API, as well as using the Profile Query Service to query existing data, and setting up streaming data of behavioral and profile data from a website using Adobe Launch.
 
 ### Goals
 
@@ -47,7 +50,8 @@ After completion of this workshop. you should be able to:
 - Ingest sample data in XDM format into Adobe Experience Platform
 - Segment profiles created in the Unified Profile Service based off ingested data
 - Understand what can be done with XDM data and Unified Profiles
-- Set up and Launch streaming endpoint and build rules to stream data from a webpage into Platform
+- Query the data ingested into Experience Platform using Profile Query Service
+- Set up a Launch streaming endpoint and build rules to stream data from a webpage into Platform
 
 #### Workshop Info & Credentials
 
