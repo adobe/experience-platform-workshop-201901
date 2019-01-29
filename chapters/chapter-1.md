@@ -80,7 +80,9 @@
 
 ## Setup for API / Technical Lab: Download Required Tools
 
-If you are planning on attending the API and Technical lab Chapters 6-9), download the resources listed below and make sure they are accessible on your local. You do not need to download these or perform the rest of the steps if you are only attending the UI-based lab (Chapters 3-5).
+[Register for API + Technical Lab](http://bit.ly/platform-spp-api) on Day 1 to ensure we have resources scaled properly for your participation
+
+If you are planning on attending the API and Technical lab (Chapters 6-9), download the resources listed below and make sure they are accessible on your local. You do not need to download these or perform the rest of the steps if you are only attending the UI-based lab (Chapters 3-5).
 
 - [Postman](https://www.getpostman.com/apps)
 - [Fenix Web Server](http://fenixwebserver.com/)
