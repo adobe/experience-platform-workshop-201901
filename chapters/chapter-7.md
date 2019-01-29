@@ -125,7 +125,7 @@ Once customer profile data exists within the platform, integrations with the com
 
     This response contains important metadata like the file name and file size.
 
-1.  Finally, let's take a look at the file stored in data services.
+1.  Next, let's take a look at the file stored in data services.
 
     ![](../images/chapter-4/overview-7.png)
 
@@ -135,11 +135,17 @@ Once customer profile data exists within the platform, integrations with the com
 
     In this case the response is not that useful to us as .parquet files are binary in format so they are difficult to read. However, it should make customers happy to know whatever data they import into data services can be exported as well.
 
+1.  Finally, let's use the preview API to get a human readable version of the dataset we've just created. Select the `Data Export: Get Dataset Preview` action and hitting `Send`.
+
+    ![](../images/chapter-4/get_dataset_preview.png)
+
+    This response returns JSON data which is at least textual format which can be read without any additional programs to do the formatting.
+
 ---
 
 #### Chapter Wrap
 
-Well that was a lot of work to ingest the data. Let's move on to the next step which is segmenting the data and targeting specific users.
+Well that was a lot of work to ingest the data. Let's move on to the next step which is querying the data and targeting specific users.
 
 #### Additional Resources
 

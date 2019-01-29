@@ -1219,6 +1219,43 @@
                 }
               },
               "response": []
+            },
+            {
+              "name": "Data Export: Get Dataset Preview",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{access_token}}"
+                  },
+                  {
+                    "key": "x-api-key",
+                    "value": "{{clientID}}"
+                  },
+                  {
+                    "key": "x-gw-ims-org-id",
+                    "value": "{{OrgID}}"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "{{PLATFORM_GATEWAY}}/data/foundation/export/datasets/{{DATASET_ID}}/preview",
+                  "host": ["{{PLATFORM_GATEWAY}}"],
+                  "path": [
+                    "data",
+                    "foundation",
+                    "export",
+                    "datasets",
+                    "{{DATASET_ID}}",
+                    "preview"
+                  ]
+                }
+              },
+              "response": []
             }
           ],
           "_postman_isSubFolder": true
