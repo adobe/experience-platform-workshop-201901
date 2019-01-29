@@ -54,7 +54,7 @@ For batch ingestion of data, it is important that the data is properly formatted
 
    ![](../images/chapter-4/ui-4-unifiedprofile-1.png)
 
-1. Find your Profile and ExperienceEvent datasets in the left list, select them, and then click "Enable", and confirm. Now your datasets will send their data into the Unified Profile service as well as Experience Platform.
+1. Find your Profile and ExperienceEvent datasets in the left list, select them, and then click "Enable", and confirm. You only need to select your own datasets; the rest that are already enabled will stay enabled. Now your datasets will send their data into the Unified Profile service as well as Experience Platform.
 
    ![](../images/chapter-4/ui-4-unifiedprofile-2.png)
 
@@ -62,7 +62,7 @@ For batch ingestion of data, it is important that the data is properly formatted
 
 #### Ingesting data into your Profile dataset
 
-1. Click on your newly created "SPP Profile" dataset. Select "Browse" under "Add Data" on the right and navigate to the data file we've provided, ProfileDataSample.parquet.
+1. Go back to the "Data" tab. Click on your newly created "SPP Profile" dataset. Select "Browse" under "Add Data" on the right and navigate to the data file we've provided, ProfileDataSample.parquet.
 
    ![](../images/chapter-4/ui-2-dataset_creation4.png)
 
