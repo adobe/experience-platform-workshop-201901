@@ -6,7 +6,6 @@
 - Understand the role of Product Profiles
 - Access control through service -settings
 - Managing users and administrators
-- Create your local websever to host a WeTravel demo site for data streaming (Chapter 9)
 
 ## Lab Resources
 
@@ -21,7 +20,6 @@
   - Add Users
   - Add as Admin
 - Verify Access to Adobe I/O Console
-- Install the Fenix Web Server with WeTravel
 
 ---
 

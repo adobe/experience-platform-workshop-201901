@@ -7,9 +7,8 @@ Using Adobe AdminConsole to manage an Experience Platform instance, manage Produ
 ## Learning Objectives
 
 - Understand AdminConsole capabilities for Experience Platform
-- Understand the role of Product Profiles
-- Access control through service -settings
-- Managing users and administrators
+- Setting up an Adobe I/O Integration
+- Create your local websever to host a WeTravel demo site for data streaming (Chapter 9)
 
 ## Lab Resources
 
@@ -19,6 +18,7 @@ Using Adobe AdminConsole to manage an Experience Platform instance, manage Produ
 
 - Setup an integration
 - Authenticate via POSTMan
+- Install the Fenix Web Server with WeTravel
 
 ### Setup an integration
 
