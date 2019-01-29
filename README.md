@@ -81,7 +81,7 @@ These will be supplied to you with a handout and are unique to each registered p
 
 ##### API and Technical Lab
 
-- Precursor - [Login and Accessing with Postman](chapters/chapter-6-precursor.md)
+- Chapter 6 Precursor - [Login and Accessing with Postman](chapters/chapter-6-precursor.md)
 - Chapter 6 - [Schema: Explore and Define XDM Schema](chapters/chapter-6.md)
 - Chapter 7 - [Data: Ingesting Data via Batch Ingestion](chapters/chapter-7.md)
 - Chapter 8 - [Querying: Using the Profile Query Service](chapters/chapter-8.md)
