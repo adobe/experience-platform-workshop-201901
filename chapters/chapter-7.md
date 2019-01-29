@@ -51,7 +51,7 @@ Once customer profile data exists within the platform, integrations with the com
 
     ![](../images/chapter-4/create_dataset.png)
 
-    The call will create a new dataset and return a ID we can use in future calls. The `"unifiedProfile": ["enabled:true"]` flag within the body ensures that this dataset is automatically included in the Unified Profile Service, which we will detail more in Chapter 5.
+    The call will create a new dataset and return a ID we can use in future calls. The `"unifiedProfile": ["enabled:true"]` flag within the body ensures that this dataset is automatically included in the Unified Profile Service, which we detailed in Chapter 5.
 
     Remember that the DataSet is based on the schema you select like Profile.
 

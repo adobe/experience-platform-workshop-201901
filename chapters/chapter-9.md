@@ -137,7 +137,7 @@ Some elements of Launch are pre-packaged for sake of time. Rules, Data Elements 
 
    ![](../images/chapter-9/launch-setup-17.png)
 
-1. There are two things here that we need to change. First, the dataset selected that we're sending data too needs to but changed. Click the dropdown and find your corresponding `SPP ExperienceEvent - [name]` dataset from earlier. Note that the Schema and Data Set ID fields are set to match the selected dataset.
+1. There are two things here that we need to change. First, the dataset selected that we're sending data to needs to but changed. Click the dropdown and find your corresponding `SPP ExperienceEvent - [name]` dataset from earlier. Note that the Schema and Data Set ID fields are set to match the selected dataset.
 
    ![](../images/chapter-9/launch-setup-20.png)
 

@@ -25,25 +25,7 @@
 
 ---
 
-## Download Required Tools
-
-Download the resources listed below and make sure they are accessible on your local.
-
-- [Postman](https://www.getpostman.com/apps)
-- [Fenix Web Server](http://fenixwebserver.com/)
-  - [WeTravel website files](../data/WeTravel-local.zip)
-- PostgreSQL [MacOS](https://www.postgresql.org/download/macosx/) use the Homebrew method or [Windows](https://www.postgresql.org/download/windows/)
-- A text editor like [VS Code](https://code.visualstudio.com/download)
-
-For Windows users, please make sure you have **OpenSSL** set up
-
-- Download an OpenSSL client [OpenSSL](https://bintray.com/vszakats/generic/download_file?file_path=openssl-1.1.1-win64-mingw.zip)
-
-Mac users will be able to use the default version of **OpenSSL** included with MacOS.
-
----
-
-## Login to Admin Console
+## Setup for Platform (All Users): Login to Admin Console
 
 1. Navigate to [https://adminconsole.adobe.com](https://adminconsole.adobe.com) in your browser
 1. Login with the “Lab Administration” administrator credential that are provided on your personal lab-worksheet.
@@ -96,10 +78,27 @@ Mac users will be able to use the default version of **OpenSSL** included with M
 
 ---
 
+## Setup for API / Technical Lab: Download Required Tools
+
+If you are planning on attending the API and Technical lab Chapters 6-9), download the resources listed below and make sure they are accessible on your local. You do not need to download these or perform the rest of the steps if you are only attending the UI-based lab (Chapters 3-5).
+
+- [Postman](https://www.getpostman.com/apps)
+- [Fenix Web Server](http://fenixwebserver.com/)
+  - [WeTravel website files](../data/WeTravel-local.zip)
+- PostgreSQL [MacOS](https://www.postgresql.org/download/macosx/) use the Homebrew method or [Windows](https://www.postgresql.org/download/windows/)
+- A text editor like [VS Code](https://code.visualstudio.com/download)
+
+For Windows users, please make sure you have **OpenSSL** set up
+
+- Download an OpenSSL client [OpenSSL](https://bintray.com/vszakats/generic/download_file?file_path=openssl-1.1.1-win64-mingw.zip)
+
+Mac users will be able to use the default version of **OpenSSL** included with MacOS.
+
+---
+
 ## Verify Access to Adobe I/O Console
 
 - Go to [Adobe I/O Console](https://console.adobe.io/) and ensure you can login using your Adobe ID.
-
 
 ---
 
@@ -173,8 +172,8 @@ Mac users will be able to use the default version of **OpenSSL** included with M
     For **Windows** users:
 
     - Press the Windows key.
-    - Type **Code** in the search field.
-    - In the search results, right-click **Code** and select **Run as administrator**.
+    - Type **Code** in the search field to find the Code Editor you downloaded (I.e. VS Code).
+    - In the search results, right-click **Code** and select **Run as Administrator**.
       From **Code**, open the following file:
 
             c:\Windows\System32\Drivers\etc\hosts

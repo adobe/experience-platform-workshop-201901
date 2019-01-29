@@ -38,7 +38,7 @@ While we were able to visually view schema, extend and create custom schema, tho
 
    ![](../images/chapter-3/get_profile_schema.png)
 
-1. Now that we've seen the API calls to query schema let's move on to creating a custom schema of our own. Expand the `Create Schema` folder under `Chapter 3` in postman and select `XDM: Create New Schema` and click `Send`.
+1. Now that we've seen the API calls to query schema let's move on to creating a custom schema of our own. Expand the `Create Schema` folder under `Chapter 6` in postman and select `XDM: Create New Schema` and click `Send`.
 
    ![](../images/chapter-3/create_schema.png)
 
