@@ -1245,6 +1245,234 @@
     },
     {
       "name": "Chapter 8 - Query the Data",
+      "item": [],
+      "description": "Unified Profile Lab",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "551be5ff-4892-4f03-8657-ad4194ef311e",
+            "type": "text/javascript",
+            "exec": [""]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "8cf948a2-f6ae-4832-8360-3168dcbdd653",
+            "type": "text/javascript",
+            "exec": [""]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Chapter 9 - Stream in Data",
+      "item": [
+        {
+          "name": "Lab 0 - Creating Streaming Endpoint",
+          "item": [
+            {
+              "name": "Streaming Endpoint Registration",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "x-api-key",
+                    "value": "{{clientID}}"
+                  },
+                  {
+                    "key": "x-gw-ims-org-id",
+                    "value": "{{OrgID}}"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "{{access_token}}"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n\t\"name\" : \"My Streaming Endpoint\",\n    \"description\" : \"Collects streaming data from my website\",\n    \"sourceId\" : \"myAwesomeWebsite_{{participant_number}}\",\n    \"dataType\": \"xdm\"\n}"
+                },
+                "url": {
+                  "raw": "{{PLATFORM_GATEWAY}}/data/core/pipeline/inlet/registration/",
+                  "host": ["{{PLATFORM_GATEWAY}}"],
+                  "path": [
+                    "data",
+                    "core",
+                    "pipeline",
+                    "inlet",
+                    "registration",
+                    ""
+                  ]
+                },
+                "description": "Creates a data-inlet for clients to send streaming data"
+              },
+              "response": []
+            }
+          ],
+          "_postman_isSubFolder": true
+        },
+        {
+          "name": "profile point lookup",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{access_token}}"
+              },
+              {
+                "key": "Cache-Control",
+                "value": "\"no-cache\""
+              },
+              {
+                "key": "x-api-key",
+                "value": "{{clientID}}"
+              },
+              {
+                "key": "x-gw-ims-org-id",
+                "value": "{{OrgID}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "{{PLATFORM_GATEWAY}}/data/core/ups/access/entities?schema.name=_xdm.context.profile&entityId=anshuman@adobe.com&entityIdNS=email",
+              "host": ["{{PLATFORM_GATEWAY}}"],
+              "path": ["data", "core", "ups", "access", "entities"],
+              "query": [
+                {
+                  "key": "schema.name",
+                  "value": "_xdm.context.profile"
+                },
+                {
+                  "key": "entityId",
+                  "value": "anshuman@adobe.com"
+                },
+                {
+                  "key": "entityIdNS",
+                  "value": "email"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "experience record lookup",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{access_token}}"
+              },
+              {
+                "key": "Cache-Control",
+                "value": "\"no-cache\""
+              },
+              {
+                "key": "x-api-key",
+                "value": "{{clientID}}"
+              },
+              {
+                "key": "x-gw-ims-org-id",
+                "value": "{{OrgID}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "{{PLATFORM_GATEWAY}}/data/core/ups/access/entities?schema.name=_xdm.context.experienceevent&relatedSchema.name=_xdm.context.profile&entityId=89149270342662559642753730269986316500&entityIdNS=ecid",
+              "host": ["{{PLATFORM_GATEWAY}}"],
+              "path": ["data", "core", "ups", "access", "entities"],
+              "query": [
+                {
+                  "key": "schema.name",
+                  "value": "_xdm.context.experienceevent"
+                },
+                {
+                  "key": "relatedSchema.name",
+                  "value": "_xdm.context.profile"
+                },
+                {
+                  "key": "entityId",
+                  "value": "89149270342662559642753730269986316500"
+                },
+                {
+                  "key": "entityIdNS",
+                  "value": "ecid"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Profile: Create A Segment",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "bearer {{access_token}}"
+              },
+              {
+                "key": "x-api-key",
+                "value": "{{clientID}}"
+              },
+              {
+                "key": "x-gw-ims-org-id",
+                "value": "{{OrgID}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\" : \"All Males\",\n    \"expression\" : {\"type\":\"PQL\", \"format\":\"pql/text\", \"value\":\"person.gender = \\\"male\\\"\"},\n    \"createdBy\": \"October TTT\",\n    \"schema\" : { \"name\" : \"_xdm.context.profile\"},\n    \"ttlInDays\" : 90\n}"
+            },
+            "url": {
+              "raw": "{{PLATFORM_GATEWAY}}/data/core/ups/segment/definitions",
+              "host": ["{{PLATFORM_GATEWAY}}"],
+              "path": ["data", "core", "ups", "segment", "definitions"]
+            }
+          },
+          "response": []
+        }
+      ],
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "85a2c4b3-eaa0-4f00-a896-33b461175b57",
+            "type": "text/javascript",
+            "exec": [""]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "19da2551-8f83-4005-8fb5-6f01321d1ea2",
+            "type": "text/javascript",
+            "exec": [""]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Chapter 10",
       "item": [
         {
           "name": "Segmentation",
@@ -1669,230 +1897,6 @@
             }
           ],
           "_postman_isSubFolder": true
-        }
-      ],
-      "description": "Unified Profile Lab",
-      "event": [
-        {
-          "listen": "prerequest",
-          "script": {
-            "id": "551be5ff-4892-4f03-8657-ad4194ef311e",
-            "type": "text/javascript",
-            "exec": [""]
-          }
-        },
-        {
-          "listen": "test",
-          "script": {
-            "id": "8cf948a2-f6ae-4832-8360-3168dcbdd653",
-            "type": "text/javascript",
-            "exec": [""]
-          }
-        }
-      ]
-    },
-    {
-      "name": "Chapter 9 - Stream in Data",
-      "item": [
-        {
-          "name": "Lab 0 - Creating Streaming Endpoint",
-          "item": [
-            {
-              "name": "Streaming Endpoint Registration",
-              "request": {
-                "method": "POST",
-                "header": [
-                  {
-                    "key": "x-api-key",
-                    "value": "{{clientID}}"
-                  },
-                  {
-                    "key": "x-gw-ims-org-id",
-                    "value": "{{OrgID}}"
-                  },
-                  {
-                    "key": "Content-Type",
-                    "value": "application/json"
-                  },
-                  {
-                    "key": "Authorization",
-                    "value": "{{access_token}}"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\n\t\"name\" : \"My Streaming Endpoint\",\n    \"description\" : \"Collects streaming data from my website\",\n    \"sourceId\" : \"myAwesomeWebsite_{{participant_number}}\",\n    \"dataType\": \"xdm\"\n}"
-                },
-                "url": {
-                  "raw": "{{PLATFORM_GATEWAY}}/data/core/pipeline/inlet/registration/",
-                  "host": ["{{PLATFORM_GATEWAY}}"],
-                  "path": [
-                    "data",
-                    "core",
-                    "pipeline",
-                    "inlet",
-                    "registration",
-                    ""
-                  ]
-                },
-                "description": "Creates a data-inlet for clients to send streaming data"
-              },
-              "response": []
-            }
-          ],
-          "_postman_isSubFolder": true
-        },
-        {
-          "name": "profile point lookup",
-          "request": {
-            "method": "GET",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "{{access_token}}"
-              },
-              {
-                "key": "Cache-Control",
-                "value": "\"no-cache\""
-              },
-              {
-                "key": "x-api-key",
-                "value": "{{clientID}}"
-              },
-              {
-                "key": "x-gw-ims-org-id",
-                "value": "{{OrgID}}"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
-            "url": {
-              "raw": "{{PLATFORM_GATEWAY}}/data/core/ups/access/entities?schema.name=_xdm.context.profile&entityId=anshuman@adobe.com&entityIdNS=email",
-              "host": ["{{PLATFORM_GATEWAY}}"],
-              "path": ["data", "core", "ups", "access", "entities"],
-              "query": [
-                {
-                  "key": "schema.name",
-                  "value": "_xdm.context.profile"
-                },
-                {
-                  "key": "entityId",
-                  "value": "anshuman@adobe.com"
-                },
-                {
-                  "key": "entityIdNS",
-                  "value": "email"
-                }
-              ]
-            }
-          },
-          "response": []
-        },
-        {
-          "name": "experience record lookup",
-          "request": {
-            "method": "GET",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "{{access_token}}"
-              },
-              {
-                "key": "Cache-Control",
-                "value": "\"no-cache\""
-              },
-              {
-                "key": "x-api-key",
-                "value": "{{clientID}}"
-              },
-              {
-                "key": "x-gw-ims-org-id",
-                "value": "{{OrgID}}"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
-            "url": {
-              "raw": "{{PLATFORM_GATEWAY}}/data/core/ups/access/entities?schema.name=_xdm.context.experienceevent&relatedSchema.name=_xdm.context.profile&entityId=89149270342662559642753730269986316500&entityIdNS=ecid",
-              "host": ["{{PLATFORM_GATEWAY}}"],
-              "path": ["data", "core", "ups", "access", "entities"],
-              "query": [
-                {
-                  "key": "schema.name",
-                  "value": "_xdm.context.experienceevent"
-                },
-                {
-                  "key": "relatedSchema.name",
-                  "value": "_xdm.context.profile"
-                },
-                {
-                  "key": "entityId",
-                  "value": "89149270342662559642753730269986316500"
-                },
-                {
-                  "key": "entityIdNS",
-                  "value": "ecid"
-                }
-              ]
-            }
-          },
-          "response": []
-        },
-        {
-          "name": "Profile: Create A Segment",
-          "request": {
-            "method": "POST",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "bearer {{access_token}}"
-              },
-              {
-                "key": "x-api-key",
-                "value": "{{clientID}}"
-              },
-              {
-                "key": "x-gw-ims-org-id",
-                "value": "{{OrgID}}"
-              },
-              {
-                "key": "Content-Type",
-                "value": "application/json"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "{\n    \"name\" : \"All Males\",\n    \"expression\" : {\"type\":\"PQL\", \"format\":\"pql/text\", \"value\":\"person.gender = \\\"male\\\"\"},\n    \"createdBy\": \"October TTT\",\n    \"schema\" : { \"name\" : \"_xdm.context.profile\"},\n    \"ttlInDays\" : 90\n}"
-            },
-            "url": {
-              "raw": "{{PLATFORM_GATEWAY}}/data/core/ups/segment/definitions",
-              "host": ["{{PLATFORM_GATEWAY}}"],
-              "path": ["data", "core", "ups", "segment", "definitions"]
-            }
-          },
-          "response": []
-        }
-      ],
-      "event": [
-        {
-          "listen": "prerequest",
-          "script": {
-            "id": "85a2c4b3-eaa0-4f00-a896-33b461175b57",
-            "type": "text/javascript",
-            "exec": [""]
-          }
-        },
-        {
-          "listen": "test",
-          "script": {
-            "id": "19da2551-8f83-4005-8fb5-6f01321d1ea2",
-            "type": "text/javascript",
-            "exec": [""]
-          }
         }
       ]
     }
