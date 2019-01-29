@@ -58,16 +58,16 @@
 
 ---
 
-
-
 #### Additional Resources
+
+[Unified Profile, Identity, & Segmentation](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation.html)
 
 ---
 
 ### Navigate
 
-|**Previous:**|
-|---|
-|Chapter 9 - [Technical - Streaming: Stream in Data using Launch](chapter-9.md)|
+| **Previous:**                                                                  |
+| ------------------------------------------------------------------------------ |
+| Chapter 9 - [Technical - Streaming: Stream in Data using Launch](chapter-9.md) |
 
 **Return Home:** [Workbook Index](../README.md)

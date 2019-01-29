@@ -186,14 +186,22 @@ Using Adobe AdminConsole to manage an Experience Platform instance, manage Produ
 
    That JSON response includes an `access_token` which is the Bearer token used to authenticate with Adobe I/O. The POSTMan call will save this value in an environment variable for future use.
 
-Whew! We are finally ready to start calling the Adobe Experience Platform API's for real.
+---
+
+#### Chapter Wrap
+
+Whew! We are finally ready to start calling the Adobe Experience Platform API's for real. We've run through creating an integration and getting authenticated.
+
+#### Additional Resources
+
+[Authentication Documentation on Adobe I/O](https://www.adobe.io/authentication.html)
 
 ---
 
 ### Navigate
 
-|**Previous:**|**Next:**|
-|---|---|
-|Chapter 5 - [UI - Segmentation: Building Segments from Unified Profiles](chapter-5.md)|Chapter 6 - [API - Schema: Explore and Define XDM Schema](chapter-6.md)|
+| **Previous:**                                                                          | **Next:**                                                               |
+| -------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| Chapter 5 - [UI - Segmentation: Building Segments from Unified Profiles](chapter-5.md) | Chapter 6 - [API - Schema: Explore and Define XDM Schema](chapter-6.md) |
 
 **Return Home:** [Workbook Index](../README.md)

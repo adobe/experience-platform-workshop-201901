@@ -143,12 +143,14 @@ Well that was a lot of work to ingest the data. Let's move on to the next step w
 
 #### Additional Resources
 
+[Catalog Service RESTful API Resource](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/catalog.yaml)
+
 ---
 
 ### Navigate
 
-|**Previous:**|**Next:**|
-|---|---|
-|Chapter 6 - [API - Schema: Explore and Define XDM Schema](chapter-6.md)|Chapter 8 - [Technical: Querying: Using the Profile Query Service](chapter-8.md)|
+| **Previous:**                                                           | **Next:**                                                                        |
+| ----------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| Chapter 6 - [API - Schema: Explore and Define XDM Schema](chapter-6.md) | Chapter 8 - [Technical: Querying: Using the Profile Query Service](chapter-8.md) |
 
 **Return Home:** [Workbook Index](../README.md)

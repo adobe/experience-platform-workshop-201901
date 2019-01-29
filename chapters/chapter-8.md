@@ -163,15 +163,18 @@ Data scientists and others may need to do more specific lookups and queries on t
 
 #### Chapter Wrap
 
+Now we've learned how to use standard SQL queries to retrieve data from our data lake as well as create new datasets based on our queries.
 
 #### Additional Resources
+
+[Query Service on Adobe I/O](https://www.adobe.io/apis/experienceplatform/home/services/query-service/query-service.html)
 
 ---
 
 ### Navigate
 
-|**Previous:**|**Next:**|
-|---|---|
-|Chapter 7 - [API - Data: Ingesting Data via Batch Ingestion](chapter-7.md)|Chapter 9 - [Technical - Streaming: Stream in Data using Launch](chapter-9.md)|
+| **Previous:**                                                              | **Next:**                                                                      |
+| -------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| Chapter 7 - [API - Data: Ingesting Data via Batch Ingestion](chapter-7.md) | Chapter 9 - [Technical - Streaming: Stream in Data using Launch](chapter-9.md) |
 
 **Return Home:** [Workbook Index](../README.md)
