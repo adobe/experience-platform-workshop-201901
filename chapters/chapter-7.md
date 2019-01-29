@@ -139,7 +139,7 @@ Once customer profile data exists within the platform, integrations with the com
 
     ![](../images/chapter-4/get_dataset_preview.png)
 
-    This response returns JSON data which is at least textual format which can be read without any additional programs to do the formatting.
+    This response returns JSON data which is at least textual format which can be read without any additional programs to do the formatting. Note: preview will only show you the results of the latest batch to be ingested into that dataset.
 
 ---
 
