@@ -113,7 +113,7 @@ Using Adobe AdminConsole to manage an Experience Platform instance, manage Produ
 
    ![](../images/chapter-2/postman_import.png)
 
-   Select the [PlatformSupport.postman_collection.json](postman/PlatformSupport.postman_collection.json) collection file from this repository.
+   Select the [PlatformSummit.postman_collection.json](postman/PlatformSummit.postman_collection.json) collection file from this repository.
 
 1. Next we need to import our environment. Click on the settings logo
 
@@ -127,7 +127,7 @@ Using Adobe AdminConsole to manage an Experience Platform instance, manage Produ
 
    ![](../images/chapter-2/postman_import_env.png)
 
-1. Select the [PlatformSupport.postman_environment.json](postman/PlatformSupport.postman_environment.json) file to import the environment.
+1. Select the [PlatformSummit.postman_environment.json](postman/PlatformSummit.postman_environment.json) file to import the environment.
 
    ![](../images/chapter-2/postman_after_env_import.png)
 
