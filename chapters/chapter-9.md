@@ -119,7 +119,7 @@ Some elements of Launch are pre-packaged for sake of time. Rules, Data Elements 
 
 1. Select your streaming endpoint - in the text box, type your [firstinitial / lastname] and your endpoint should pop up. Select it and click `Save to Library and Build`.
 
-##### Sending Profile Data
+##### Sending ExperienceEvent Data
 
 1. Now, we have our streaming endpoint from our WeTravel site into Experience Platform defined and ready to go. The next step is to create triggers that will make actions happen on our WeTravel site. Go to the `Rules` tab. Take alook at the existing rules - we have two defined here. Look into `Page Visit`.
 
@@ -154,7 +154,7 @@ Some elements of Launch are pre-packaged for sake of time. Rules, Data Elements 
 
 1. Let's save our changes. Click on `Keep Changes` to save our Action, and then `Save to Library and Build`. Now the rule for "Page View" has been set.
 
-##### Sending ExperienceEvent Data
+##### Sending Profile Data
 
 1. We just set up our first rule to send an ExperienceEvent to Platform! Now let's do the same thing for same with Profile data, by taking a look at the `Sign Up` rule. Clicking on `Core - Click` you can see the composition of the event that we're looking for - a click on the `Submit` button during sign-up.
 

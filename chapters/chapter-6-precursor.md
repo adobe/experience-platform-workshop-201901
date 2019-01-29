@@ -144,7 +144,9 @@ Using Adobe AdminConsole to manage an Experience Platform instance, manage Produ
 
    that you generated when you created your **new integration**.
 
-   Also fill out the `ldap` field with your user id so you'll be able to uniquely identify the datasets you create.
+   **Fill these out in both the "Initial Valeus" and the "Current Values" field.**
+
+   Also fill out the `ldap` field with your user id (first initial + last name) so you'll be able to uniquely identify the datasets you create.
 
 1. Copy the contents of the `private.key` and use it as the value for `secret`.
 
@@ -174,7 +176,7 @@ Using Adobe AdminConsole to manage an Experience Platform instance, manage Produ
 
 1. After all this setup you are now ready to generate an JWT and bearer token to interact with Adobe I/O. In order to make this process easier we'll be using an Adobe I/O Runtime action.
 
-   From our newly imported `Platform Summit` collection, open chapter 2 and click on `Adobe I/O Runtime: Generate Auth`. Then click on the body tab:
+   From our newly imported `Platform Summit` collection, open `Pre-Chapter 6` and click on `Adobe I/O Runtime: Generate Auth`. Then click on the body tab:
 
    ![](../images/chapter-2/postman_auth_body.png)
 
