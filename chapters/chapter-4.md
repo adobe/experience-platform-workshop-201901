@@ -38,13 +38,17 @@ For batch ingestion of data, it is important that the data is properly formatted
 
    ![](../images/chapter-4/ui-2-dataset_creation.png)
 
-1. Filter the datasets by typing "Profile" in the search box, and select the bottom-most "Profile" schema that pops up. Name your dataset as "SPP Profile - [your first initial + last name]"
+1. Filter the datasets by typing "ExperienceEvent" in the search box, and select the bottom-most "ExperienceEvent" schema that pops up. Name your dataset as "SPP ExperienceEvent - [first initial + last name]". 
+
+   ![](../images/chapter-4/ui-2-dataset_creation2_experienceevent.png)
+
+   ![](../images/chapter-4/ui-2-dataset_creation3_experienceevent.png)
+
+1. Do the same for an "Profile" schema-based dataset, naming it "SPP Profile - [first initial + last name]". This is the dataset we will be using for data ingestion. You should now have TWO datasets - one for Profile, and one for ExperienceEvent.
 
    ![](../images/chapter-4/ui-2-dataset_creation2.png)
 
    ![](../images/chapter-4/ui-2-dataset_creation3.png)
-
-1. Do the same for an "ExperienceEvent" schema-based dataset, naming it "SPP ExperienceEvent - [your first initial + last name]". We will save this for a later chapter. You should now have TWO datasets - one for Profile, and one for ExperienceEvent.
 
 #### Enabling your datasets for Unified Profile
 
