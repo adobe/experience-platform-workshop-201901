@@ -26,6 +26,9 @@
 ## Setup for Platform (All Users): Login to Admin Console
 
 1. Navigate to [https://adminconsole.adobe.com](https://adminconsole.adobe.com) in your browser
+
+   ![](../images/chapter-2/adminconsole.png)
+
 1. Login with the “Lab Administration” administrator credential that are provided on your personal lab-worksheet.
 
    ![](../images/chapter-2/adminlogin.png)
@@ -108,8 +111,8 @@ If time permits during the session, move on to [API Technical Lab Setup](/chapte
 
 ### Navigate
 
-|**Next:**|
-|---|
-|Chapter 2 - [XDM and Experience Platform Overview](chapter-2.md)|
+| **Next:**                                                        |
+| ---------------------------------------------------------------- |
+| Chapter 2 - [XDM and Experience Platform Overview](chapter-2.md) |
 
 **Return Home:** [Workbook Index](../README.md)
