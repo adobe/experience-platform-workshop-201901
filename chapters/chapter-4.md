@@ -80,15 +80,15 @@ For batch ingestion of data, it is important that the data is properly formatted
    
 #### Adding data governance to your dataset   
 
-1. [NOT WORKING IN OLD UI] Alright, now that our customer loyalty data has been ingested, we want to make sure that this dataset is properly governed for usage and export control. Click on the "Data Governance" tabe and observe that we can set three types of restrictions: Contractual, Identity, and Sensitive Data.
+1. Alright, now that our customer loyalty data has been ingested, we want to make sure that this dataset is properly governed for usage and export control. Click on the "Data Governance" tabe and observe that we can set three types of restrictions: Contractual, Identity, and Sensitive Data.
 
    ![](../images/chapter-4/ui-5-data_governance.png)
 
-1. [NOT WORKING IN OLD UI] Let's restrict identity data for the entire dataset. Hover over your dataset name, and click the Pencil icon to edit the settings. Go to "Identity Data" and check the "I2" option - this will assume that all pieces of information in this dataset are _at least_ indirectly identifiable to the person.
+1. Let's restrict identity data for the entire dataset. Hover over your dataset name, and click the Pencil icon to edit the settings. Go to "Identity Data" and check the "I2" option - this will assume that all pieces of information in this dataset are _at least_ indirectly identifiable to the person.
 
    ![](../images/chapter-4/ui-6-data_governance_flag.png)
 
-1. [NOT WORKING IN OLD UI] Click "Save Changes" and observe that "I2" is now set for all data fields in the dataset. You can also set these flags for individual data fields - for example, the "person" field is likely an "I1" level for directly identifiable information.
+1. Click "Save Changes" and observe that "I2" is now set for all data fields in the dataset. You can also set these flags for individual data fields - for example, the "person" field is likely an "I1" level for directly identifiable information.
 
    ![](../images/chapter-4/ui-7-data_governance_set.png)
 
