@@ -48,7 +48,14 @@ Data scientists and others may need to do more specific lookups and queries on t
 
     Download and install [PostgreSQL](https://www.postgresql.org/download/windows/)
 
-    After installation you will need to edit your path variable:
+    After installation you will need to edit your path variable to add two entries:
+
+    ```
+    C:\Program Files\PostgreSQL\11.1\bin
+    C:\Program Files\PostgreSQL\11.1\lib
+    ```
+
+    The version number, 11.1 in the case above, may very depending on what version of PostgreSQL you installed. At the time of writing 11.1 was the latest version.
 
     ![](../images/chapter-8/path.png)
 
@@ -58,7 +65,7 @@ Data scientists and others may need to do more specific lookups and queries on t
 
     You should see something like this:
 
-        psql (PostgreSQL) 9.5.14
+        psql (PostgreSQL) 11.1
 
 1.  Connect to the platform web site: [https://platform.adobe.com](https://platform.adobe.com)
 
@@ -83,6 +90,8 @@ Data scientists and others may need to do more specific lookups and queries on t
             all=>
 
     If you don't see at least version 10.5 of psql then you need to download an updated version.
+
+    **Windows Users**: I'm sorry but before you paste the command into a command window you will need to paste it into a text editor like Notepad or VS Code and remove all the new lines. The windows terminal will not run multi-line commands properly.
 
 ### Examine Datasets
 
