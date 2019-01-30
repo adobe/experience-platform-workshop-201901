@@ -34,6 +34,13 @@ Using Adobe AdminConsole to manage an Experience Platform instance, manage Produ
 
    **For Windows Platform**
 
+   For Windows users, please make sure you have **OpenSSL** set up
+
+    - Download an OpenSSL client [OpenSSL](https://bintray.com/vszakats/generic/download_file?file_path=openssl-1.1.1-win64-mingw.zip)
+
+   Extract this zip file to the directory `C:\libs`
+
+
    Open Command Line Prompt and execute below commands.
 
    ```shell
